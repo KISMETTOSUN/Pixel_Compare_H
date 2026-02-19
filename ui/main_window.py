@@ -274,9 +274,9 @@ class MainWindow(ctk.CTk):
                 row_values = [c.value for c in row]
                 self.row_data_map[row_idx] = row_values
                 
-                # Display first two columns
+                # Display: A=Ref Name, C=Examples (B is hints, not shown in table)
                 ref = row_values[0] if len(row_values) > 0 and row_values[0] else ""
-                val = row_values[1] if len(row_values) > 1 and row_values[1] else ""
+                val = row_values[2] if len(row_values) > 2 and row_values[2] else ""
                 
                 # Insert and map
                 item_id = self.rule_tree.insert("", "end", values=("🔍", ref, val, ""))

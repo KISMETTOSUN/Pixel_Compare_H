@@ -274,3 +274,429 @@ Term: 'Kapsül'
 Norm: 'Kapsül'
 Page: 0
 Found via search_for: [250.42396545410156, 112.80799865722656, 284.53997802734375, 126.09200286865234]
+
+--- Click Row ---
+Term: 'MAJEZİK 200 mg SR mikropellet kapsül Ağızdan alınır.'
+Norm: 'MAJEZİK 200 mg SR mikropellet kapsül Ağızdan alınır.'
+Page: 0
+Found via search_for: [70.94400024414062, 112.80799865722656, 287.69000244140625, 126.09200286865234]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [250.42396545410156, 112.80799865722656, 284.53997802734375, 126.09200286865234]
+
+--- Click Row ---
+Term: 'Her kapsül 200 mg Flurbiprofen içerir.'
+Norm: 'Her kapsül 200 mg Flurbiprofen içerir.'
+Page: 0
+Found via search_for: [176.77999877929688, 168.8479766845703, 363.2120056152344, 182.13197326660156]
+
+--- Click Row ---
+Term: '25 C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: '25 C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 6
+Found via search_for: [78.02400207519531, 525.2979736328125, 93.02400207519531, 538.5819702148438]
+
+--- Click Row ---
+Term: 'GRİPİN kapsül Ağızdan alınır. Etkin maddeler:  Her bir kapsül; etkin madde olarak 250 mg Parasetamol ve 15 mg Kafein'
+Norm: 'GRİPİN kapsül Ağızdan alınır. Etkin maddeler: Her bir kapsül; etkin madde olarak 250 mg Parasetamol ve 15 mg Kafein'
+Page: 0
+Found via search_for: [70.8239974975586, 103.08796691894531, 154.22000122070312, 116.3719711303711]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [117.02399444580078, 103.08796691894531, 151.15199279785156, 116.3719711303711]
+
+--- Click Row ---
+Term: 'ler:  Her bir kapsül; etkin madde olarak 250 mg Parasetamol ve 15 mg Kafein'
+Norm: 'ler: Her bir kapsül; etkin madde olarak 250 mg Parasetamol ve 15 mg Kafein'
+Page: 0
+Found via search_for: [148.22000122070312, 151.3279571533203, 524.4639892578125, 164.61195373535156]
+
+--- Click Row ---
+Term: '300 mg parasetamol, 2 mg klorfeniramin maleat, 10 mg kodein fosfat içerir.'
+Norm: '300 mg parasetamol, 2 mg klorfeniramin maleat, 10 mg kodein fosfat içerir.'
+Page: 0
+Found via search_for: [140.94720458984375, 140.44764709472656, 506.22723388671875, 153.7316436767578]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [235.54791259765625, 99.04768371582031, 269.5799255371094, 112.3316879272461]
+
+--- Click Row ---
+Term: 'A-FERİN® 300 mg/2 mg/ 10 mg kapsül Ağızdan alınır. Etkin madde: 300 mg parasetamol, 2 mg klorfeniramin maleat, 10 mg kodein fosfat içerir.'
+Norm: 'A-FERİN® 300 mg/2 mg/ 10 mg kapsül Ağızdan alınır. Etkin madde: 300 mg parasetamol, 2 mg klorfeniramin maleat, 10 mg kodein fosfat içerir.'
+Page: 0
+Found via search_for: [70.92001342773438, 99.04768371582031, 120.86161804199219, 112.3316879272461]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [270.5592041015625, 71.44770812988281, 279.22320556640625, 84.7317123413086]
+
+--- Click Row ---
+Term: '300 mg parasetamol, 2 mg klorfeniramin maleat, 10 mg kodein fosfat içerir.'
+Norm: '300 mg parasetamol, 2 mg klorfeniramin maleat, 10 mg kodein fosfat içerir.'
+Page: 0
+Found via search_for: [140.94720458984375, 140.44764709472656, 506.22723388671875, 153.7316436767578]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [235.54791259765625, 99.04768371582031, 269.5799255371094, 112.3316879272461]
+
+--- Click Row ---
+Term: 'A-FERİN® 300 mg/2 mg/ 10 mg kapsül Ağızdan alınır. Etkin madde: 300 mg parasetamol, 2 mg klorfeniramin maleat, 10 mg kodein fosfat içerir.'
+Norm: 'A-FERİN® 300 mg/2 mg/ 10 mg kapsül Ağızdan alınır. Etkin madde: 300 mg parasetamol, 2 mg klorfeniramin maleat, 10 mg kodein fosfat içerir.'
+Page: 0
+Found via search_for: [70.92001342773438, 99.04768371582031, 120.86161804199219, 112.3316879272461]
+
+--- Click Row ---
+Term: 'GRİPİN kapsül Ağızdan alınır. Etkin maddeler:  Her bir kapsül; etkin madde olarak 250 mg Parasetamol ve 15 mg Kafein'
+Norm: 'GRİPİN kapsül Ağızdan alınır. Etkin maddeler: Her bir kapsül; etkin madde olarak 250 mg Parasetamol ve 15 mg Kafein'
+Page: 0
+Found via search_for: [70.8239974975586, 103.08796691894531, 154.22000122070312, 116.3719711303711]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [117.02399444580078, 103.08796691894531, 151.15199279785156, 116.3719711303711]
+
+--- Click Row ---
+Term: 'ler:  Her bir kapsül; etkin madde olarak 250 mg Parasetamol ve 15 mg Kafein'
+Norm: 'ler: Her bir kapsül; etkin madde olarak 250 mg Parasetamol ve 15 mg Kafein'
+Page: 0
+Found via search_for: [148.22000122070312, 151.3279571533203, 524.4639892578125, 164.61195373535156]
+
+--- Click Row ---
+Term: '4 adet kapsül ve 8 adet kapsül olmak üzere iki ayrı ambalaj formu mevcuttur.'
+Norm: '4 adet kapsül ve 8 adet kapsül olmak üzere iki ayrı ambalaj formu mevcuttur.'
+Page: 0
+Found via search_for: [70.8239974975586, 668.4879760742188, 442.0579833984375, 681.77197265625]
+
+--- Click Row ---
+Term: '20 tablet'
+Norm: '20 tablet'
+Page: 0
+Found via search_for: [182.39999389648438, 587.1600341796875, 224.61599731445312, 603.3240356445312]
+
+--- Click Row ---
+Term: 'ASPİRİN® 100 mg tablet'
+Norm: 'ASPİRİN® 100 mg tablet'
+Page: 0
+Found via search_for: [96.5999984741211, 93.40802001953125, 145.94400024414062, 110.0160140991211]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [198.9600067138672, 93.40802001953125, 227.67601013183594, 110.0160140991211]
+
+--- Click Row ---
+Term: '100 mg asetilsalisilik asit'
+Norm: '100 mg asetilsalisilik asit'
+Page: 0
+Found via search_for: [277.79998779296875, 148.92002868652344, 413.2560119628906, 165.0840301513672]
+
+--- Click Row ---
+Term: '25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız.'
+Norm: '25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız.'
+Page: 6
+Found via search_for: [92.51998138427734, 576.6000366210938, 104.51998138427734, 592.7640380859375]
+
+--- Click Row ---
+Term: 'THERAFLU FORTE film tablet Ağız yoluyla alınır.  Etkin madde: Her bir film tablet 650 mg parasetamol, 10 mg fenilefrin hidroklorür ve 4'
+Norm: 'THERAFLU FORTE film tablet Ağız yoluyla alınır.  Etkin madde: Her bir film tablet 650 mg parasetamol, 10 mg fenilefrin hidroklorür ve 4'
+Page: 0
+Found via search_for: [70.8239974975586, 141.1280059814453, 240.77000427246094, 154.41200256347656]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [208.3699951171875, 141.1280059814453, 237.6739959716797, 154.41200256347656]
+
+--- Click Row ---
+Term: 'Her bir film tablet 650 mg parasetamol, 10 mg fenilefrin hidroklorür ve 4'
+Norm: 'Her bir film tablet 650 mg parasetamol, 10 mg fenilefrin hidroklorür ve 4'
+Page: 0
+Found via search_for: [163.72999572753906, 195.1280059814453, 524.3260498046875, 208.41200256347656]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [263.4380187988281, 108.48799133300781, 272.1020202636719, 121.7719955444336]
+
+--- Click Row ---
+Term: '25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: '25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 6
+Found via search_for: [70.8239974975586, 354.75799560546875, 295.9340515136719, 368.0419921875]
+
+--- Click Row ---
+Term: 'VOLTAREN SR 75 mg film kaplı tablet Ağızdan alınır. • Etkin madde: Her bir tablet 75 mg diklofenak sodyum içerir.'
+Norm: 'VOLTAREN SR 75 mg film kaplı tablet Ağızdan alınır. • Etkin madde: Her bir tablet 75 mg diklofenak sodyum içerir.'
+Page: 0
+Found via search_for: [84.95999908447266, 112.12799072265625, 153.0240020751953, 128.73599243164062]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [267.4800109863281, 112.12799072265625, 296.7959899902344, 128.73599243164062]
+
+--- Click Row ---
+Term: 'Metformin'
+Norm: 'Metformin'
+Page: 5
+Found via search_for: [372.7200622558594, 142.44004821777344, 423.48004150390625, 158.6040496826172]
+
+--- Click Row ---
+Term: '20 tablet'
+Norm: '20 tablet'
+Page: 0
+Found via search_for: [146.87998962402344, 605.6400146484375, 188.49598693847656, 621.8040161132812]
+
+--- Click Row ---
+Term: '20 tablet'
+Norm: '20 tablet'
+Page: 0
+Found via search_for: [146.87998962402344, 605.6400146484375, 188.49598693847656, 621.8040161132812]
+
+--- Click Row ---
+Term: 'Metformin'
+Norm: 'Metformin'
+Page: 5
+Found via search_for: [372.7200622558594, 142.44004821777344, 423.48004150390625, 158.6040496826172]
+
+--- Click Row ---
+Term: 'VOLTAREN SR 75 mg film kaplı tablet Ağızdan alınır. • Etkin madde: Her bir tablet 75 mg diklofenak sodyum içerir.'
+Norm: 'VOLTAREN SR 75 mg film kaplı tablet Ağızdan alınır. • Etkin madde: Her bir tablet 75 mg diklofenak sodyum içerir.'
+Page: 0
+Found via search_for: [84.95999908447266, 112.12799072265625, 153.0240020751953, 128.73599243164062]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [267.4800109863281, 112.12799072265625, 296.7959899902344, 128.73599243164062]
+
+--- Click Row ---
+Term: '20 tablet'
+Norm: '20 tablet'
+Page: 0
+Found via search_for: [146.87998962402344, 605.6400146484375, 188.49598693847656, 621.8040161132812]
+
+--- Click Row ---
+Term: 'Metformin'
+Norm: 'Metformin'
+Page: 5
+Found via search_for: [372.7200622558594, 142.44004821777344, 423.48004150390625, 158.6040496826172]
+
+--- Click Row ---
+Term: 'UROTREXİN® 50 mg uzatılmış salımlı film kaplı tablet Ağız yoluyla kullanılır.'
+Norm: 'UROTREXİN® 50 mg uzatılmış salımlı film kaplı tablet Ağız yoluyla kullanılır.'
+Page: 0
+Found via search_for: [70.94400024414062, 104.52796936035156, 144.61199951171875, 117.81197357177734]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [326.8299865722656, 104.52796936035156, 356.1700134277344, 117.81197357177734]
+
+--- Click Row ---
+Term: 'Mirabegron'
+Norm: 'Mirabegron'
+Page: 0
+Found via search_for: [154.6999969482422, 160.3279571533203, 211.23800659179688, 173.61195373535156]
+
+--- Click Row ---
+Term: '20 tablet'
+Norm: '20 tablet'
+Page: 0
+Found via search_for: [205.00999450683594, 642.447998046875, 248.78599548339844, 655.7319946289062]
+
+--- Click Row ---
+Term: '25°C altındaki oda sıcaklığında saklayınız.'
+Norm: '25°C altındaki oda sıcaklığında saklayınız.'
+Page: 5
+Found via search_for: [70.94400024414062, 486.2980041503906, 276.5299987792969, 499.5820007324219]
+
+--- Click Row ---
+Term: '20 tablet'
+Norm: '20 tablet'
+Page: 0
+Found via search_for: [146.87998962402344, 605.6400146484375, 188.49598693847656, 621.8040161132812]
+
+--- Click Row ---
+Term: '30°C altındaki oda sıcaklığında saklayınız. Orijinal ambalajında saklayınız.'
+Norm: '30°C altındaki oda sıcaklığında saklayınız. Orijinal ambalajında saklayınız.'
+Page: 11
+Found via search_for: [84.96002197265625, 304.5597839355469, 447.23980712890625, 320.7237854003906]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [267.4800109863281, 112.12799072265625, 296.7959899902344, 128.73599243164062]
+
+--- Click Row ---
+Term: 'Metformin'
+Norm: 'Metformin'
+Page: 5
+Found via search_for: [372.7200622558594, 142.44004821777344, 423.48004150390625, 158.6040496826172]
+
+--- Click Row ---
+Term: 'VOLTAREN SR 75 mg film kaplı tablet Ağızdan alınır. • Etkin madde: Her bir tablet 75 mg diklofenak sodyum içerir.'
+Norm: 'VOLTAREN SR 75 mg film kaplı tablet Ağızdan alınır. • Etkin madde: Her bir tablet 75 mg diklofenak sodyum içerir.'
+Page: 0
+Found via search_for: [84.95999908447266, 112.12799072265625, 153.0240020751953, 128.73599243164062]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [220.25, 126.60798645019531, 254.40199279785156, 139.89198303222656]
+
+--- Click Row ---
+Term: 'LANSOR 30 mg mikropellet kapsül Ağızdan alınır.'
+Norm: 'LANSOR 30 mg mikropellet kapsül Ağızdan alınır.'
+Page: 0
+Found via search_for: [70.94400024414062, 126.60798645019531, 257.33001708984375, 139.89198303222656]
+
+--- Click Row ---
+Term: 'Amoksisilin'
+Norm: 'Amoksisilin'
+Page: 4
+Found via search_for: [160.33999633789062, 114.48799133300781, 215.86398315429688, 127.7719955444336]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [280.5859680175781, 85.20796203613281, 289.2499694824219, 98.4919662475586]
+
+--- Click Row ---
+Term: 'LANSOR’u 25 C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25 C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Found via search_for: [70.94400024414062, 243.3679962158203, 146.89999389648438, 256.6520080566406]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [220.25, 126.60798645019531, 254.40199279785156, 139.89198303222656]
+
+--- Click Row ---
+Term: 'Amoksisilin'
+Norm: 'Amoksisilin'
+Page: 4
+Found via search_for: [160.33999633789062, 114.48799133300781, 215.86398315429688, 127.7719955444336]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [280.5859680175781, 85.20796203613281, 289.2499694824219, 98.4919662475586]
+
+--- Click Row ---
+Term: 'Amoksisilin'
+Norm: 'Amoksisilin'
+Page: 4
+Found via search_for: [160.33999633789062, 114.48799133300781, 215.86398315429688, 127.7719955444336]
+
+--- Click Row ---
+Term: 'Lansoprazol 30 mg'
+Norm: 'Lansoprazol 30 mg'
+Page: 0
+Found via search_for: [160.22000122070312, 174.9679718017578, 252.1699981689453, 188.25196838378906]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [280.5859680175781, 85.20796203613281, 289.2499694824219, 98.4919662475586]
+
+--- Click Row ---
+Term: 'LANSOR’u 25 C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25 C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Found via search_for: [70.94400024414062, 243.3679962158203, 146.89999389648438, 256.6520080566406]
+
+--- Click Row ---
+Term: 'LANSOR 30 mg mikropellet kapsül Ağızdan alınır.'
+Norm: 'LANSOR 30 mg mikropellet kapsül Ağızdan alınır.'
+Page: 0
+Found via search_for: [70.94400024414062, 126.60798645019531, 257.33001708984375, 139.89198303222656]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [220.25, 126.60798645019531, 254.40199279785156, 139.89198303222656]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [270.0, 164.21498107910156, 296.906005859375, 179.3289794921875]
+
+--- Click Row ---
+Term: 'z 1000 mg Ranolazin'
+Norm: 'z 1000 mg Ranolazin'
+Page: 0
+Found via search_for: [193.56149291992188, 217.30746459960938, 284.5170593261719, 230.7205047607422]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [276.2709655761719, 139.0149688720703, 283.60797119140625, 154.12896728515625]
+
+--- Click Row ---
+Term: '25°C'
+Norm: '25°C'
+Page: 6
+Candidates indices: []
+
+--- Click Row ---
+Term: 'BELOC® ZOK 50 mg kontrollü salımlı film tablet Ağızdan alınır. • Etkin madde : 50 mg metoprolol tartarata eşdeğer 47,5 mg metoprolol süksinat içerir.'
+Norm: 'BELOC® ZOK 50 mg kontrollü salımlı film tablet Ağızdan alınır. • Etkin madde : 50 mg metoprolol tartarata eşdeğer 47,5 mg metoprolol süksinat içerir.'
+Page: 0
+Found via search_for: [70.8239974975586, 98.88795471191406, 112.90799713134766, 112.17195892333984]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [297.29595947265625, 98.88795471191406, 326.5159606933594, 112.17195892333984]
+
+--- Click Row ---
+Term: '50 mg metoprolol tartarata eşdeğer 47,5 mg metoprolol süksinat içerir.'
+Norm: '50 mg metoprolol tartarata eşdeğer 47,5 mg metoprolol süksinat içerir.'
+Page: 0
+Found via search_for: [161.89999389648438, 141.1280059814453, 501.3819885253906, 154.41200256347656]
+
+--- Click Row ---
+Term: '20 tablet'
+Norm: '20 tablet'
+Page: 0
+Found via search_for: [180.23599243164062, 570.927978515625, 221.8879852294922, 584.2119750976562]
+
+--- Click Row ---
+Term: 'Başlıkları yer almaktadır. 1. BELOC® ZOK nedir ve ne için kullanılır?'
+Norm: 'Başlıkları yer almaktadır. 1. BELOC® ZOK nedir ve ne için kullanılır?'
+Page: 0
+Found via search_for: [70.8239974975586, 460.49798583984375, 209.80999755859375, 473.781982421875]
