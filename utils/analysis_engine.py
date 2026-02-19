@@ -130,28 +130,47 @@ class AnalysisEngine:
 
                 # Check ALL rules against this page
                 for rule in rules_data:
-                    term = rule["term"]
+                    original_term = rule["term"]
                     
-                    # Normalize term similar to page text
-                    term_clean = str(term)
-                    for p in [".", ",", ":", ";", "(", ")", "-", "\u2013", "\u2014"]:
-                        term_clean = term_clean.replace(p, " ")
-                    term_norm = " ".join(term_clean.lower().split())
+                    # Split by hyphen to get sub-terms (Smart Search)
+                    sub_terms = [t.strip() for t in str(original_term).split('-') if t.strip()]
                     
-                    # Normalized string existence check
-                    if term_norm in page_text_norm:
-                        rule["found"] = True
-                        rule["locations"].append({
-                            "page": page_num,
-                            "rect": None # UI will calculate this on click
-                        })
-                        with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
-                            f.write(f"  [MATCH] Term: '{term_norm}'\n")
-                    else:
-                         # Log failures for specific suspicious terms
-                         if "500" in term_norm or "tablet" in term_norm:
-                             with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
-                                 f.write(f"  [FAIL] Term: '{term_norm}' not in Page {page_num}\n")
+                    if not sub_terms:
+                        sub_terms = [str(original_term)] # Fallback if empty
+
+                    for st in sub_terms:
+                        # Normalize sub-term similar to page text
+                        st_clean = str(st)
+                        for p in [".", ",", ":", ";", "(", ")", "-", "\u2013", "\u2014"]:
+                            st_clean = st_clean.replace(p, " ")
+                        st_norm = " ".join(st_clean.lower().split())
+                        
+                        # Normalized string existence check
+                        if st_norm in page_text_norm:
+                            rule["found"] = True
+                            rule["locations"].append({
+                                "page": page_num,
+                                "rect": None, # UI will calculate this on click
+                                "matched_term": st # Store specific matched term for highlighting
+                            })
+                            with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
+                                f.write(f"  [MATCH] Term: '{st_norm}' (Sub of '{original_term}')\n")
+                            
+                            # Optimization: If found one sub-term on this page, maybe continued to find others? 
+                            # User said "Biri bile varsa". 
+                            # But if checking multiple distinct concepts, finding all is better?
+                            # Example: "Parol - Aspirin". If both on page, maybe lists 2 locations?
+                            # Current logic appends location. So valid.
+                            # We can break here if we only want to record "Page X has match" once per rule.
+                            # But highlighting multiple occurrences is nice. 
+                            # Let's NOT break, so we catch Parol AND Aspirin if both exist.
+                            pass
+                        
+                        else:
+                             # Log failures for specific suspicious terms
+                             if "500" in st_norm or "tablet" in st_norm:
+                                 with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
+                                     f.write(f"  [FAIL] Term: '{st_norm}' not in Page {page_num}\n")
             
             # 3. Return results (rules_data is already in correct format)
             analysis_results = rules_data

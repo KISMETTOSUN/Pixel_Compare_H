@@ -127,8 +127,9 @@ class MainWindow(ctk.CTk):
         # I'll stick to just tick for now, effectively implementing the latest request.
 
         # Control Document Selection
-        self.control_label = ctk.CTkLabel(self.sidebar_frame, text="Control PDF:", anchor="w")
-        self.control_label.grid(row=5, column=0, padx=20, pady=(10, 0))
+        # Control Document Selection - Removed per user request
+        # self.control_label = ctk.CTkLabel(self.sidebar_frame, text="Control PDF:", anchor="w")
+        # self.control_label.grid(row=5, column=0, padx=20, pady=(10, 0))
 
         self.select_control_btn = ctk.CTkButton(self.sidebar_frame, text="Select PDF", command=self.select_control_file)
         self.select_control_btn.grid(row=6, column=0, padx=20, pady=10)
@@ -320,7 +321,8 @@ class MainWindow(ctk.CTk):
                 if first_loc["rect"] is None:
                     try:
                         page_num = first_loc["page"]
-                        term = result["term"]
+                        # Use matched sub-term if available (Smart Search), else full term
+                        term = first_loc.get("matched_term", result["term"])
                         # Normalize term: split and join to handle newlines/excess spaces
                         # This matches the logic used in analysis_engine pre-check
                         term_norm = " ".join(str(term).split())

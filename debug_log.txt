@@ -76,3 +76,63 @@ Term: '25°C’nin altındaki oda sıcaklığında saklanmalıdır.'
 Norm: '25°C’nin altındaki oda sıcaklığında saklanmalıdır.'
 Page: 9
 Found via search_for: [68.04000854492188, 83.03996276855469, 309.7199401855469, 99.2039566040039]
+
+--- Click Row ---
+Term: 'PAROL 500 mg tablet'
+Norm: 'PAROL 500 mg tablet'
+Page: 0
+Found via search_for: [68.04000854492188, 108.83995056152344, 176.25599670410156, 125.00394439697266]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [149.63999938964844, 108.83995056152344, 176.25599670410156, 125.00394439697266]
+
+--- Click Row ---
+Term: '500 mg parasetamol'
+Norm: '500 mg parasetamol'
+Page: 0
+Found via search_for: [68.04000854492188, 164.03990173339844, 165.21600341796875, 180.2039031982422]
+
+--- Click Row ---
+Term: '25°C’nin altındaki oda sıcaklığında saklanmalıdır.'
+Norm: '25°C’nin altındaki oda sıcaklığında saklanmalıdır.'
+Page: 9
+Found via search_for: [68.04000854492188, 83.03996276855469, 309.7199401855469, 99.2039566040039]
+
+--- Click Row ---
+Term: 'PAROL 500 mg tablet'
+Norm: 'PAROL 500 mg tablet'
+Page: 0
+Found via search_for: [68.04000854492188, 108.83995056152344, 176.25599670410156, 125.00394439697266]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [149.63999938964844, 108.83995056152344, 176.25599670410156, 125.00394439697266]
+
+--- Click Row ---
+Term: '500 mg parasetamol'
+Norm: '500 mg parasetamol'
+Page: 0
+Found via search_for: [68.04000854492188, 164.03990173339844, 165.21600341796875, 180.2039031982422]
+
+--- Click Row ---
+Term: '25°C’nin altındaki oda sıcaklığında saklanmalıdır.'
+Norm: '25°C’nin altındaki oda sıcaklığında saklanmalıdır.'
+Page: 9
+Found via search_for: [68.04000854492188, 83.03996276855469, 309.7199401855469, 99.2039566040039]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [198.9600067138672, 93.40802001953125, 227.67601013183594, 110.0160140991211]
+
+--- Click Row ---
+Term: '20 tablet'
+Norm: '20 tablet'
+Page: 0
+Found via search_for: [182.39999389648438, 587.1600341796875, 224.61599731445312, 603.3240356445312]
