@@ -700,3 +700,135 @@ Term: 'Başlıkları yer almaktadır. 1. BELOC® ZOK nedir ve ne için kullanıl
 Norm: 'Başlıkları yer almaktadır. 1. BELOC® ZOK nedir ve ne için kullanılır?'
 Page: 0
 Found via search_for: [70.8239974975586, 460.49798583984375, 209.80999755859375, 473.781982421875]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [270.0, 164.21498107910156, 296.906005859375, 179.3289794921875]
+
+--- Click Row ---
+Term: 'z 1000 mg Ranolazin'
+Norm: 'z 1000 mg Ranolazin'
+Page: 0
+Found via search_for: [193.56149291992188, 217.30746459960938, 284.5170593261719, 230.7205047607422]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [276.2709655761719, 139.0149688720703, 283.60797119140625, 154.12896728515625]
+
+--- Click Row ---
+Term: '25°C'
+Norm: '25°C'
+Page: 6
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C'
+Norm: '25°C'
+Page: 6
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C'
+Norm: '25°C'
+Page: 6
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C'
+Norm: '25°C'
+Page: 6
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C'
+Norm: '25°C'
+Page: 6
+Candidates indices: []
+
+--- Click Row ---
+Term: 'BELOC® ZOK 50 mg kontrollü salımlı film tablet Ağızdan alınır. • Etkin madde : 50 mg metoprolol tartarata eşdeğer 47,5 mg metoprolol süksinat içerir.'
+Norm: 'BELOC® ZOK 50 mg kontrollü salımlı film tablet Ağızdan alınır. • Etkin madde : 50 mg metoprolol tartarata eşdeğer 47,5 mg metoprolol süksinat içerir.'
+Page: 0
+Found via search_for: [70.8239974975586, 98.88795471191406, 112.90799713134766, 112.17195892333984]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [297.29595947265625, 98.88795471191406, 326.5159606933594, 112.17195892333984]
+
+--- Click Row ---
+Term: '50 mg metoprolol tartarata eşdeğer 47,5 mg metoprolol süksinat içerir.'
+Norm: '50 mg metoprolol tartarata eşdeğer 47,5 mg metoprolol süksinat içerir.'
+Page: 0
+Found via search_for: [161.89999389648438, 141.1280059814453, 501.3819885253906, 154.41200256347656]
+
+--- Click Row ---
+Term: '20 tablet'
+Norm: '20 tablet'
+Page: 0
+Found via search_for: [180.23599243164062, 570.927978515625, 221.8879852294922, 584.2119750976562]
+
+--- Click Row ---
+Term: 'Başlıkları yer almaktadır. 1. BELOC® ZOK nedir ve ne için kullanılır?'
+Norm: 'Başlıkları yer almaktadır. 1. BELOC® ZOK nedir ve ne için kullanılır?'
+Page: 0
+Found via search_for: [70.8239974975586, 460.49798583984375, 209.80999755859375, 473.781982421875]
+
+--- Click Row ---
+Term: 'Başlıkları yer almaktadır. 1. ENZADRE nedir ve ne için kullanılır?'
+Norm: 'Başlıkları yer almaktadır. 1. ENZADRE nedir ve ne için kullanılır?'
+Page: 0
+Found via search_for: [70.8239974975586, 516.657958984375, 209.80999755859375, 529.9419555664062]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [263.4380187988281, 71.26795959472656, 272.1020202636719, 84.55196380615234]
+
+--- Click Row ---
+Term: 'Her bir yumuşak kapsül, 40 mg enzalutamid içerir.'
+Norm: 'Her bir yumuşak kapsül, 40 mg enzalutamid içerir.'
+Page: 0
+Found via search_for: [155.05999755859375, 150.4879913330078, 399.1540222167969, 163.77198791503906]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [218.85198974609375, 103.08796691894531, 255.60198974609375, 116.3719711303711]
+
+--- Click Row ---
+Term: 'ENZADRE 40 mg Yumuşak Kapsül Ağızdan alınır. • Etkin madde: Her bir yumuşak kapsül, 40 mg enzalutamid içerir.'
+Norm: 'ENZADRE 40 mg Yumuşak Kapsül Ağızdan alınır. • Etkin madde: Her bir yumuşak kapsül, 40 mg enzalutamid içerir.'
+Page: 0
+Found via search_for: [70.8239974975586, 103.08796691894531, 261.5299987792969, 116.3719711303711]
+
+--- Click Row ---
+Term: 'Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg'
+Norm: 'Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg'
+Page: 0
+Found via search_for: [186.52999877929688, 147.3679962158203, 510.5299377441406, 160.65199279785156]
+
+--- Click Row ---
+Term: 'GALVİKS ADVANCE 1000 mg + 200 mg/10 ml oral süspansiyon Ağızdan alınır. • Etkin maddeler: Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg'
+Norm: 'GALVİKS ADVANCE 1000 mg + 200 mg/10 ml oral süspansiyon Ağızdan alınır. • Etkin maddeler: Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg'
+Page: 0
+Found via search_for: [85.10399627685547, 94.92799377441406, 422.739990234375, 108.21199798583984]
+
+--- Click Row ---
+Term: 'Krem'
+Norm: 'Krem'
+Page: 0
+Found via search_for: [364.05804443359375, 693.927978515625, 388.634033203125, 707.2119750976562]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [263.6780090332031, 64.30799865722656, 272.3420104980469, 77.59200286865234]

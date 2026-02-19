@@ -1,15 +1,13 @@
 === Analysis Start ===
-[PHASE 1 MATCH] Row 3 'Farmasotik Şekil': Found 'Tablet' on page 0
-[PHASE 1 MATCH] Row 5 'Ürün Miktarı': Found '20 tablet' on page 0
+[PHASE 0 MATCH] Row 4 'Etkin Madde': Found 'Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg' on page 0
+[PHASE 1 MATCH] Row 3 'Farmasotik Şekil': Found 'Krem' on page 0
+[PHASE 1 MATCH] Row 5 'Ürün Miktarı': Found 'A' on page 0
 
 [PHASE 2] Row 2 'Ürün Adı': Strategies=[{'type': 'page_hint', 'page': 0}, {'type': 'under_heading', 'heading': 'KISA ÜRÜN BİLGİSİ'}, {'type': 'under_heading', 'heading': 'KULLANMA TALİMATI'}, {'type': 'under_heading', 'heading': 'KISA ÜRÜN BİLGİSİ  baş'}]
-[PHASE 2 MATCH] Row 2 'Ürün Adı': Found 'BELOC® ZOK 50 mg kontrollü salımlı film tablet Ağızdan alınır. • Etkin madde : 50 mg metoprolol tartarata eşdeğer 47,5 mg metoprolol süksinat içerir.' on page 0
-
-[PHASE 2] Row 4 'Etkin Madde': Strategies=[{'type': 'after_keyword', 'keyword': 'Etkin madde'}]
-[PHASE 2 MATCH] Row 4 'Etkin Madde': Found '50 mg metoprolol tartarata eşdeğer 47,5 mg metoprolol süksinat içerir.' on page 0
+[PHASE 2 MATCH] Row 2 'Ürün Adı': Found 'GALVİKS ADVANCE 1000 mg + 200 mg/10 ml oral süspansiyon Ağızdan alınır. • Etkin maddeler: Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg' on page 0
 
 [PHASE 2] Row 6 'Saklama Kosulu': Strategies=[{'type': 'with_keyword', 'keyword': '25°C'}, {'type': 'under_heading', 'heading': '"’ın saklanması"'}]
 [PHASE 2 FAIL] Row 6 'Saklama Kosulu': No match
 
-[PHASE 3] Row 6 'Saklama Kosulu': Keywords=['25°C', '30°C', '25°C', 'sakla']
-[PHASE 3 MATCH heading] Row 6: Found 'Başlıkları yer almaktadır. 1. BELOC® ZOK nedir ve ne için kullanılır?' on page 0
+[PHASE 3] Row 6 'Saklama Kosulu': Scanning all pages for °C
+[PHASE 3 FAIL] Row 6 'Saklama Kosulu': No °C found in PDF

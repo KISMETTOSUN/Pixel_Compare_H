@@ -361,8 +361,8 @@ class AnalysisEngine:
                         with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
                             f.write(f"[PHASE 2 FAIL] Row {rule['row_index']} '{rule['ref_name']}': No match\n")
 
-            # 4. PHASE 3: Last resort - scan for key indicators from B column
-            # Extract specific keywords from hints and search ANY page
+            # 4. PHASE 3: Last resort - scan ALL pages for °C keyword
+            # Only for rules that mention °C in their hint (e.g. Saklama Koşulu)
             for rule in rules_data:
                 if rule["found"]:
                     continue
@@ -371,23 +371,12 @@ class AnalysisEngine:
                 if not hint:
                     continue
                 
-                # Extract searchable keywords from the hint text
-                # e.g. "25°C", "30°C", "saklanması", "saklama"
-                search_keywords = []
-                
-                # Find temperature patterns like 25°C, 30°C
-                temp_matches = re.findall(r'\d+\s*°\s*C', hint)
-                search_keywords.extend(temp_matches)
-                
-                # Find "sakla" related words
-                if any(w in hint.lower() for w in ["sakla", "saklam", "saklan"]):
-                    search_keywords.append("sakla")
-                
-                if not search_keywords:
+                # Only apply this phase if hint mentions °C
+                if "°C" not in hint and "°c" not in hint.lower():
                     continue
                 
                 with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
-                    f.write(f"\n[PHASE 3] Row {rule['row_index']} '{rule['ref_name']}': Keywords={search_keywords}\n")
+                    f.write(f"\n[PHASE 3] Row {rule['row_index']} '{rule['ref_name']}': Scanning all pages for °C\n")
                 
                 for page_num in range(len(doc)):
                     if rule["found"]:
@@ -400,16 +389,11 @@ class AnalysisEngine:
                     
                     for line in lines:
                         line_stripped = line.strip()
-                        if not line_stripped:
+                        if not line_stripped or len(line_stripped) < 5:
                             continue
                         
-                        # Check for °C in the line
-                        has_degree = "°C" in line_stripped or "°c" in line_stripped.lower()
-                        # Check for "sakla" keyword
-                        has_sakla = "sakla" in line_stripped.lower()
-                        
-                        if has_degree and has_sakla:
-                            # Best match: line has both °C and saklama
+                        # Only match lines that contain °C
+                        if "°C" in line_stripped or "°c" in line_stripped:
                             rule["found"] = True
                             rule["matched_term"] = line_stripped[:200]
                             rule["search_phase"] = "keyword_scan"
@@ -422,63 +406,9 @@ class AnalysisEngine:
                                 f.write(f"[PHASE 3 MATCH] Row {rule['row_index']}: Found '{line_stripped[:80]}' on page {page_num}\n")
                             break
                 
-                # If still not found, try just °C alone
                 if not rule["found"]:
-                    for page_num in range(len(doc)):
-                        if rule["found"]:
-                            break
-                        page = doc.load_page(page_num)
-                        raw_text = page.get_text("text") or ""
-                        raw_text = raw_text.replace("\uf0b0", "°")
-                        lines = raw_text.split("\n")
-                        
-                        for line in lines:
-                            line_stripped = line.strip()
-                            if ("°C" in line_stripped or "°c" in line_stripped.lower()) and len(line_stripped) > 5:
-                                rule["found"] = True
-                                rule["matched_term"] = line_stripped[:200]
-                                rule["search_phase"] = "keyword_scan"
-                                rule["locations"].append({
-                                    "page": page_num,
-                                    "rect": None,
-                                    "matched_term": line_stripped[:200]
-                                })
-                                with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
-                                    f.write(f"[PHASE 3 MATCH °C] Row {rule['row_index']}: Found '{line_stripped[:80]}' on page {page_num}\n")
-                                break
-                
-                # If STILL not found, try "saklanması" heading
-                if not rule["found"]:
-                    for page_num in range(len(doc)):
-                        if rule["found"]:
-                            break
-                        page = doc.load_page(page_num)
-                        raw_text = page.get_text("text") or ""
-                        lines = raw_text.split("\n")
-                        
-                        for i, line in enumerate(lines):
-                            if "saklanması" in line.lower() or "saklama" in line.lower():
-                                # Grab context after this heading
-                                context_parts = []
-                                for j in range(i+1, min(i+5, len(lines))):
-                                    stripped = lines[j].strip()
-                                    if stripped:
-                                        context_parts.append(stripped)
-                                    if len(context_parts) >= 2:
-                                        break
-                                context = " ".join(context_parts) if context_parts else line.strip()
-                                if context:
-                                    rule["found"] = True
-                                    rule["matched_term"] = context[:200]
-                                    rule["search_phase"] = "keyword_scan"
-                                    rule["locations"].append({
-                                        "page": page_num,
-                                        "rect": None,
-                                        "matched_term": context[:200]
-                                    })
-                                    with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
-                                        f.write(f"[PHASE 3 MATCH heading] Row {rule['row_index']}: Found '{context[:80]}' on page {page_num}\n")
-                                    break
+                    with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
+                        f.write(f"[PHASE 3 FAIL] Row {rule['row_index']} '{rule['ref_name']}': No °C found in PDF\n")
 
             # 5. Return results
             analysis_results = rules_data

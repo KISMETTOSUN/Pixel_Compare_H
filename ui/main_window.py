@@ -97,12 +97,12 @@ class MainWindow(ctk.CTk):
         self.rule_tree = ttk.Treeview(self.table_frame, columns=("view", "ref", "val", "status"), show="headings", height=15)
         self.rule_tree.heading("view", text="") # Icon column header empty
         self.rule_tree.heading("ref", text="Ref")
-        self.rule_tree.heading("val", text="Data")
+        self.rule_tree.heading("val", text="Sonuç")
         self.rule_tree.heading("status", text="St")
         
         self.rule_tree.column("view", width=30, anchor="center", stretch=False)
         self.rule_tree.column("ref", width=80)
-        self.rule_tree.column("val", width=120)
+        self.rule_tree.column("val", width=200)
         self.rule_tree.column("status", width=30, anchor="center")
         
         # Scrollbars
@@ -233,6 +233,10 @@ class MainWindow(ctk.CTk):
                  if item_id:
                      if found:
                          self.rule_tree.set(item_id, "status", "✔") # Status column
+                         # Show matched result in Sonuç column
+                         matched = res.get("matched_term", "")
+                         if matched:
+                             self.rule_tree.set(item_id, "val", matched[:100])
                          self.rule_tree.item(item_id, tags=('found',))
                      else:
                          self.rule_tree.set(item_id, "status", "")
@@ -274,12 +278,11 @@ class MainWindow(ctk.CTk):
                 row_values = [c.value for c in row]
                 self.row_data_map[row_idx] = row_values
                 
-                # Display: A=Ref Name, C=Examples (B is hints, not shown in table)
+                # Display: A=Ref Name, Sonuç starts empty (filled after analysis)
                 ref = row_values[0] if len(row_values) > 0 and row_values[0] else ""
-                val = row_values[2] if len(row_values) > 2 and row_values[2] else ""
                 
-                # Insert and map
-                item_id = self.rule_tree.insert("", "end", values=("🔍", ref, val, ""))
+                # Insert and map - Sonuç column starts empty
+                item_id = self.rule_tree.insert("", "end", values=("🔍", ref, "", ""))
                 
                 self.excel_row_to_item_id[row_idx] = item_id
                 self.item_id_to_excel_row[item_id] = row_idx
