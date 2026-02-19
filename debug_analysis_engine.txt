@@ -457,3 +457,646 @@ Page 9 Norm: 10 6 4 saklamaya yönelik özel uyarılar 25°c’nin altındaki od
   [FAIL] Term: '500 mg parasetamol' not in Page 9
   [FAIL] Term: '20 tablet' not in Page 9
   [MATCH] Term: '25°c’nin altındaki oda sıcaklığında saklanmalıdır' (Sub of '25°C’nin altındaki oda sıcaklığında saklanmalıdır-25°C altında saklayınız')
+Page 0 Norm: 1 kisa ürün bi̇lgi̇si̇ 1 beşeri̇ tibbi̇ ürünün adi parol 500 mg tablet 2 kali̇tati̇f ve kanti̇tati̇f...
+  [MATCH] Term: 'parol 500 mg tablet' (Sub of 'PAROL 500 mg tablet-SPİRİN® 100 mg tablet')
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 0
+  [MATCH] Term: 'tablet' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [MATCH] Term: '500 mg parasetamol' (Sub of '500 mg parasetamol- 100 mg asetilsalisilik asit-Asetaminofen-Amoksisilin-Metformin')
+  [FAIL] Term: '20 tablet' not in Page 0
+Page 1 Norm: 2 geriyatrik popülasyon sağlıklı hareketli yaşlılarda normal yetişkin dozu uygundur fakat zayıf hare...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 i̇ştahsızlık yüksek dozlarda parasetamolün uzun süreli kullanılması böbrek hasarına neden olabilir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 parasetamol veya metabolitleri k vitaminine bağımlı koagülasyon faktörü sentezinde rol oynayan enz...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 laktasyon dönemi emziren annelerdeki bir farmakokinetik çalışmada 650 mg’lık dozun %1’inden azı an...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [MATCH] Term: 'toz' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 hepato biliyer hastalıklar seyrek çok miktarda alındığında hepatik bozukluk çok seyrek hepatik dis...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 tedavi erken dönemde belirgin semptom olmamasına karşın hasta hemen hastaneye gönderilmelidir semp...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [MATCH] Term: 'tablet' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+Page 7 Norm: 8 parasetamol karaciğerde metabolize olur ve insanda çok sayıda metabolitleri tanımlanmıştır i̇drarl...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 7
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 7
+  [FAIL] Term: 'tablet' not in Page 7
+  [FAIL] Term: '500 mg parasetamol' not in Page 7
+  [FAIL] Term: '20 tablet' not in Page 7
+Page 8 Norm: 9 pediyatrik popülasyon çalışmalar 0 2 gün arasındaki yeni doğanlarda ve 3 10 yaş arasındaki çocukla...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 8
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 8
+  [FAIL] Term: 'tablet' not in Page 8
+  [FAIL] Term: '500 mg parasetamol' not in Page 8
+  [FAIL] Term: '20 tablet' not in Page 8
+Page 9 Norm: 10 6 4 saklamaya yönelik özel uyarılar 25°c’nin altındaki oda sıcaklığında saklanmalıdır 6 5 ambalaj...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 9
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 9
+  [MATCH] Term: 'tablet' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 9
+  [FAIL] Term: '20 tablet' not in Page 9
+  [MATCH] Term: '25°c’nin altındaki oda sıcaklığında saklanmalıdır' (Sub of '25°C’nin altındaki oda sıcaklığında saklanmalıdır-25°C altında saklayınız')
+Page 0 Norm: 1 bu ilacı kullanmaya başlamadan önce bu kullanma tali̇matini dikkatlice okuyunuz çünkü sizin için ö...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [MATCH] Term: 'spi̇ri̇n® 100 mg tablet' (Sub of 'PAROL 500 mg tablet-SPİRİN® 100 mg tablet')
+  [MATCH] Term: 'tablet' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [MATCH] Term: '100 mg asetilsalisilik asit' (Sub of '500 mg parasetamol- 100 mg asetilsalisilik asit-Asetaminofen-Amoksisilin-Metformin')
+  [MATCH] Term: '20 tablet' (Sub of '20 tablet')
+Page 1 Norm: 2 görünümünde dil kırmızı ve çatlamış görünümde dudaklar avuç içi ve ayak tabanının kızarık renkte g...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 hekiminizi bilgilendirin • şiddetli glukoz 6 fosfat dehidrogenaz g6pd kan şekeri metabolizmasında ...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 ya da yan etkiler değişebilir aşağıdaki ilaçları kullanıyorsanız lütfen doktorunuza söyleyiniz • k...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 dozda 80 100 mg/kg/gün günde 3 4 dozda ateş düşene kadar veya 14 gün boyunca tedaviye devam edilir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 aspi̇ri̇n ile tedavi sonlandırıldığındaki oluşabilecek etkiler bilinen bir etkisi bulunmamaktadır ...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • eller ayaklar bilekler yüz dil ve dudakların şişmesi yada özellikle ağız veya boğazın yutmayı ve...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+Page 7 Norm: 8 son kullanma tarihi geçmiş veya kullanılmayan ilaçları çöpe atmayınız! çevre ve şehircilik bakanlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 7
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 7
+  [FAIL] Term: 'tablet' not in Page 7
+  [FAIL] Term: '500 mg parasetamol' not in Page 7
+  [FAIL] Term: '20 tablet' not in Page 7
+Page 0 Norm: 1 bu ilacı kullanmaya başlamadan önce bu kullanma tali̇matini dikkatlice okuyunuz çünkü sizin için ö...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [MATCH] Term: 'spi̇ri̇n® 100 mg tablet' (Sub of 'PAROL 500 mg tablet-SPİRİN® 100 mg tablet')
+  [MATCH] Term: 'tablet' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [MATCH] Term: '100 mg asetilsalisilik asit' (Sub of '500 mg parasetamol- 100 mg asetilsalisilik asit-Asetaminofen-Amoksisilin-Metformin')
+  [MATCH] Term: '20 tablet' (Sub of '20 tablet')
+Page 1 Norm: 2 görünümünde dil kırmızı ve çatlamış görünümde dudaklar avuç içi ve ayak tabanının kızarık renkte g...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 hekiminizi bilgilendirin • şiddetli glukoz 6 fosfat dehidrogenaz g6pd kan şekeri metabolizmasında ...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 ya da yan etkiler değişebilir aşağıdaki ilaçları kullanıyorsanız lütfen doktorunuza söyleyiniz • k...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 dozda 80 100 mg/kg/gün günde 3 4 dozda ateş düşene kadar veya 14 gün boyunca tedaviye devam edilir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 aspi̇ri̇n ile tedavi sonlandırıldığındaki oluşabilecek etkiler bilinen bir etkisi bulunmamaktadır ...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • eller ayaklar bilekler yüz dil ve dudakların şişmesi yada özellikle ağız veya boğazın yutmayı ve...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+  [MATCH] Term: '25°c altındaki oda sıcaklığında kuru bir yerde saklayınız' (Sub of '25°C’nin altındaki oda sıcaklığında saklanmalıdır-25°C altında saklayınız-25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız')
+Page 7 Norm: 8 son kullanma tarihi geçmiş veya kullanılmayan ilaçları çöpe atmayınız! çevre ve şehircilik bakanlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 7
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 7
+  [FAIL] Term: 'tablet' not in Page 7
+  [FAIL] Term: '500 mg parasetamol' not in Page 7
+  [FAIL] Term: '20 tablet' not in Page 7
+Page 0 Norm: 1 kullanma tali̇mati majezi̇k 200 mg sr mikropellet kapsül ağızdan alınır • etkin madde her kapsül 2...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 0
+  [FAIL] Term: 'tablet' not in Page 0
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [MATCH] Term: 'jel' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [FAIL] Term: '20 tablet' not in Page 0
+Page 1 Norm: 2 • akut gut artriti • adet ağrısı dismenore tedavisinde kullanılır 2 majezi̇k sr’ı kullanmadan önce...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [MATCH] Term: 'toz' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 diğer benzeri ağrı kesiciler ile birlikte kullanmayınız flurbiprofen ile ilişkili olarak çok nadir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 eğer reçeteli ya da reçetesiz herhangi bir ilacı şu anda kullanıyorsanız veya son zamanlarda kulla...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 4 olası yan etkiler nelerdir? tüm ilaçlar gibi majezi̇k sr’ın içeriğinde bulunan maddelere duyarlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 • vücutta sıvı birikimi örneğin ayak bileklerinde şişlik ödem • halsizlik hasta hissetme • yükselm...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • kanın pıhtılaşmasının engellenmesi trombosit agregasyonu inhibisyonu aşağıdaki yan etkiler temel...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+Page 0 Norm: 1 kullanma tali̇mati majezi̇k 200 mg sr mikropellet kapsül ağızdan alınır • etkin madde her kapsül 2...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 0
+  [FAIL] Term: 'tablet' not in Page 0
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [MATCH] Term: 'jel' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [FAIL] Term: '20 tablet' not in Page 0
+Page 1 Norm: 2 • akut gut artriti • adet ağrısı dismenore tedavisinde kullanılır 2 majezi̇k sr’ı kullanmadan önce...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [MATCH] Term: 'toz' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 diğer benzeri ağrı kesiciler ile birlikte kullanmayınız flurbiprofen ile ilişkili olarak çok nadir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 eğer reçeteli ya da reçetesiz herhangi bir ilacı şu anda kullanıyorsanız veya son zamanlarda kulla...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 4 olası yan etkiler nelerdir? tüm ilaçlar gibi majezi̇k sr’ın içeriğinde bulunan maddelere duyarlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 • vücutta sıvı birikimi örneğin ayak bileklerinde şişlik ödem • halsizlik hasta hissetme • yükselm...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • kanın pıhtılaşmasının engellenmesi trombosit agregasyonu inhibisyonu aşağıdaki yan etkiler temel...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+Page 0 Norm: 1 kullanma tali̇mati majezi̇k 200 mg sr mikropellet kapsül ağızdan alınır • etkin madde her kapsül 2...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 0
+  [FAIL] Term: 'tablet' not in Page 0
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [MATCH] Term: 'jel' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [FAIL] Term: '20 tablet' not in Page 0
+Page 1 Norm: 2 • akut gut artriti • adet ağrısı dismenore tedavisinde kullanılır 2 majezi̇k sr’ı kullanmadan önce...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [MATCH] Term: 'toz' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 diğer benzeri ağrı kesiciler ile birlikte kullanmayınız flurbiprofen ile ilişkili olarak çok nadir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 eğer reçeteli ya da reçetesiz herhangi bir ilacı şu anda kullanıyorsanız veya son zamanlarda kulla...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 4 olası yan etkiler nelerdir? tüm ilaçlar gibi majezi̇k sr’ın içeriğinde bulunan maddelere duyarlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 • vücutta sıvı birikimi örneğin ayak bileklerinde şişlik ödem • halsizlik hasta hissetme • yükselm...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • kanın pıhtılaşmasının engellenmesi trombosit agregasyonu inhibisyonu aşağıdaki yan etkiler temel...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+Page 0 Norm: 1 kullanma tali̇mati majezi̇k 200 mg sr mikropellet kapsül ağızdan alınır • etkin madde her kapsül 2...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 0
+  [FAIL] Term: 'tablet' not in Page 0
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [MATCH] Term: 'jel' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [FAIL] Term: '20 tablet' not in Page 0
+Page 1 Norm: 2 • akut gut artriti • adet ağrısı dismenore tedavisinde kullanılır 2 majezi̇k sr’ı kullanmadan önce...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [MATCH] Term: 'toz' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 diğer benzeri ağrı kesiciler ile birlikte kullanmayınız flurbiprofen ile ilişkili olarak çok nadir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 eğer reçeteli ya da reçetesiz herhangi bir ilacı şu anda kullanıyorsanız veya son zamanlarda kulla...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 4 olası yan etkiler nelerdir? tüm ilaçlar gibi majezi̇k sr’ın içeriğinde bulunan maddelere duyarlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 • vücutta sıvı birikimi örneğin ayak bileklerinde şişlik ödem • halsizlik hasta hissetme • yükselm...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • kanın pıhtılaşmasının engellenmesi trombosit agregasyonu inhibisyonu aşağıdaki yan etkiler temel...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+Page 0 Norm: 1 kisa ürün bi̇lgi̇si̇ 1 beşeri̇ tibbi̇ ürünün adi parol 500 mg tablet 2 kali̇tati̇f ve kanti̇tati̇f...
+  [MATCH] Term: 'parol 500 mg tablet' (Sub of 'PAROL 500 mg tablet-SPİRİN® 100 mg tablet')
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 0
+  [MATCH] Term: 'tablet' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [MATCH] Term: '500 mg parasetamol' (Sub of '500 mg parasetamol- 100 mg asetilsalisilik asit-Asetaminofen-Amoksisilin-Metformin')
+  [FAIL] Term: '20 tablet' not in Page 0
+Page 1 Norm: 2 geriyatrik popülasyon sağlıklı hareketli yaşlılarda normal yetişkin dozu uygundur fakat zayıf hare...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 i̇ştahsızlık yüksek dozlarda parasetamolün uzun süreli kullanılması böbrek hasarına neden olabilir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 parasetamol veya metabolitleri k vitaminine bağımlı koagülasyon faktörü sentezinde rol oynayan enz...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 laktasyon dönemi emziren annelerdeki bir farmakokinetik çalışmada 650 mg’lık dozun %1’inden azı an...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [MATCH] Term: 'toz' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 hepato biliyer hastalıklar seyrek çok miktarda alındığında hepatik bozukluk çok seyrek hepatik dis...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 tedavi erken dönemde belirgin semptom olmamasına karşın hasta hemen hastaneye gönderilmelidir semp...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [MATCH] Term: 'tablet' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+Page 7 Norm: 8 parasetamol karaciğerde metabolize olur ve insanda çok sayıda metabolitleri tanımlanmıştır i̇drarl...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 7
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 7
+  [FAIL] Term: 'tablet' not in Page 7
+  [FAIL] Term: '500 mg parasetamol' not in Page 7
+  [FAIL] Term: '20 tablet' not in Page 7
+Page 8 Norm: 9 pediyatrik popülasyon çalışmalar 0 2 gün arasındaki yeni doğanlarda ve 3 10 yaş arasındaki çocukla...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 8
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 8
+  [FAIL] Term: 'tablet' not in Page 8
+  [FAIL] Term: '500 mg parasetamol' not in Page 8
+  [FAIL] Term: '20 tablet' not in Page 8
+Page 9 Norm: 10 6 4 saklamaya yönelik özel uyarılar 25°c’nin altındaki oda sıcaklığında saklanmalıdır 6 5 ambalaj...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 9
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 9
+  [MATCH] Term: 'tablet' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 9
+  [FAIL] Term: '20 tablet' not in Page 9
+  [MATCH] Term: '25°c' (Sub of '25°C-25°C’nin altındaki oda sıcaklığında saklanmalıdır-25°C altında saklayınız-25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız-25 °C’nin altındaki oda sıcaklığında saklayınız')
+  [MATCH] Term: '25°c’nin altındaki oda sıcaklığında saklanmalıdır' (Sub of '25°C-25°C’nin altındaki oda sıcaklığında saklanmalıdır-25°C altında saklayınız-25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız-25 °C’nin altındaki oda sıcaklığında saklayınız')
+Page 0 Norm: 1 bu ilacı kullanmaya başlamadan önce bu kullanma tali̇matini dikkatlice okuyunuz çünkü sizin için ö...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [MATCH] Term: 'spi̇ri̇n® 100 mg tablet' (Sub of 'PAROL 500 mg tablet-SPİRİN® 100 mg tablet')
+  [MATCH] Term: 'tablet' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [MATCH] Term: '100 mg asetilsalisilik asit' (Sub of '500 mg parasetamol- 100 mg asetilsalisilik asit-Asetaminofen-Amoksisilin-Metformin')
+  [MATCH] Term: '20 tablet' (Sub of '20 tablet')
+Page 1 Norm: 2 görünümünde dil kırmızı ve çatlamış görünümde dudaklar avuç içi ve ayak tabanının kızarık renkte g...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 hekiminizi bilgilendirin • şiddetli glukoz 6 fosfat dehidrogenaz g6pd kan şekeri metabolizmasında ...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 ya da yan etkiler değişebilir aşağıdaki ilaçları kullanıyorsanız lütfen doktorunuza söyleyiniz • k...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 dozda 80 100 mg/kg/gün günde 3 4 dozda ateş düşene kadar veya 14 gün boyunca tedaviye devam edilir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 aspi̇ri̇n ile tedavi sonlandırıldığındaki oluşabilecek etkiler bilinen bir etkisi bulunmamaktadır ...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • eller ayaklar bilekler yüz dil ve dudakların şişmesi yada özellikle ağız veya boğazın yutmayı ve...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+  [MATCH] Term: '25°c' (Sub of '25°C-25°C’nin altındaki oda sıcaklığında saklanmalıdır-25°C altında saklayınız-25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız-25 °C’nin altındaki oda sıcaklığında saklayınız')
+  [MATCH] Term: '25°c altındaki oda sıcaklığında kuru bir yerde saklayınız' (Sub of '25°C-25°C’nin altındaki oda sıcaklığında saklanmalıdır-25°C altında saklayınız-25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız-25 °C’nin altındaki oda sıcaklığında saklayınız')
+Page 7 Norm: 8 son kullanma tarihi geçmiş veya kullanılmayan ilaçları çöpe atmayınız! çevre ve şehircilik bakanlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 7
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 7
+  [FAIL] Term: 'tablet' not in Page 7
+  [FAIL] Term: '500 mg parasetamol' not in Page 7
+  [FAIL] Term: '20 tablet' not in Page 7
+Page 0 Norm: 1 kullanma tali̇mati majezi̇k 200 mg sr mikropellet kapsül ağızdan alınır • etkin madde her kapsül 2...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 0
+  [FAIL] Term: 'tablet' not in Page 0
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [MATCH] Term: 'jel' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [FAIL] Term: '20 tablet' not in Page 0
+Page 1 Norm: 2 • akut gut artriti • adet ağrısı dismenore tedavisinde kullanılır 2 majezi̇k sr’ı kullanmadan önce...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [MATCH] Term: 'toz' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 diğer benzeri ağrı kesiciler ile birlikte kullanmayınız flurbiprofen ile ilişkili olarak çok nadir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 eğer reçeteli ya da reçetesiz herhangi bir ilacı şu anda kullanıyorsanız veya son zamanlarda kulla...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 4 olası yan etkiler nelerdir? tüm ilaçlar gibi majezi̇k sr’ın içeriğinde bulunan maddelere duyarlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 • vücutta sıvı birikimi örneğin ayak bileklerinde şişlik ödem • halsizlik hasta hissetme • yükselm...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • kanın pıhtılaşmasının engellenmesi trombosit agregasyonu inhibisyonu aşağıdaki yan etkiler temel...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+Page 0 Norm: 1 kullanma tali̇mati majezi̇k 200 mg sr mikropellet kapsül ağızdan alınır • etkin madde her kapsül 2...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 0
+  [FAIL] Term: 'tablet' not in Page 0
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [MATCH] Term: 'jel' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [FAIL] Term: '20 tablet' not in Page 0
+Page 1 Norm: 2 • akut gut artriti • adet ağrısı dismenore tedavisinde kullanılır 2 majezi̇k sr’ı kullanmadan önce...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [MATCH] Term: 'toz' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 diğer benzeri ağrı kesiciler ile birlikte kullanmayınız flurbiprofen ile ilişkili olarak çok nadir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 eğer reçeteli ya da reçetesiz herhangi bir ilacı şu anda kullanıyorsanız veya son zamanlarda kulla...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 4 olası yan etkiler nelerdir? tüm ilaçlar gibi majezi̇k sr’ın içeriğinde bulunan maddelere duyarlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 • vücutta sıvı birikimi örneğin ayak bileklerinde şişlik ödem • halsizlik hasta hissetme • yükselm...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • kanın pıhtılaşmasının engellenmesi trombosit agregasyonu inhibisyonu aşağıdaki yan etkiler temel...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+Page 0 Norm: 1 kullanma tali̇mati majezi̇k 200 mg sr mikropellet kapsül ağızdan alınır • etkin madde her kapsül 2...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 0
+  [FAIL] Term: 'tablet' not in Page 0
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [MATCH] Term: 'jel' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [FAIL] Term: '20 tablet' not in Page 0
+Page 1 Norm: 2 • akut gut artriti • adet ağrısı dismenore tedavisinde kullanılır 2 majezi̇k sr’ı kullanmadan önce...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [MATCH] Term: 'toz' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 diğer benzeri ağrı kesiciler ile birlikte kullanmayınız flurbiprofen ile ilişkili olarak çok nadir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 eğer reçeteli ya da reçetesiz herhangi bir ilacı şu anda kullanıyorsanız veya son zamanlarda kulla...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 4 olası yan etkiler nelerdir? tüm ilaçlar gibi majezi̇k sr’ın içeriğinde bulunan maddelere duyarlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 • vücutta sıvı birikimi örneğin ayak bileklerinde şişlik ödem • halsizlik hasta hissetme • yükselm...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • kanın pıhtılaşmasının engellenmesi trombosit agregasyonu inhibisyonu aşağıdaki yan etkiler temel...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
+Page 0 Norm: 1 kullanma tali̇mati majezi̇k 200 mg sr mikropellet kapsül ağızdan alınır • etkin madde her kapsül 2...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 0
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 0
+  [FAIL] Term: 'tablet' not in Page 0
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [MATCH] Term: 'jel' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 0
+  [FAIL] Term: '20 tablet' not in Page 0
+Page 1 Norm: 2 • akut gut artriti • adet ağrısı dismenore tedavisinde kullanılır 2 majezi̇k sr’ı kullanmadan önce...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 1
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 1
+  [FAIL] Term: 'tablet' not in Page 1
+  [MATCH] Term: 'toz' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 1
+  [FAIL] Term: '20 tablet' not in Page 1
+Page 2 Norm: 3 diğer benzeri ağrı kesiciler ile birlikte kullanmayınız flurbiprofen ile ilişkili olarak çok nadir...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 2
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 2
+  [FAIL] Term: 'tablet' not in Page 2
+  [FAIL] Term: '500 mg parasetamol' not in Page 2
+  [FAIL] Term: '20 tablet' not in Page 2
+Page 3 Norm: 4 eğer reçeteli ya da reçetesiz herhangi bir ilacı şu anda kullanıyorsanız veya son zamanlarda kulla...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 3
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 3
+  [FAIL] Term: 'tablet' not in Page 3
+  [MATCH] Term: 'kapsül' (Sub of 'Tablet-Kapsül-Şurup-Merhem-Krem-Jel-Damla--Draje-Kaşe-Pilül-Toz-Toz ve paket')
+  [FAIL] Term: '500 mg parasetamol' not in Page 3
+  [FAIL] Term: '20 tablet' not in Page 3
+Page 4 Norm: 5 4 olası yan etkiler nelerdir? tüm ilaçlar gibi majezi̇k sr’ın içeriğinde bulunan maddelere duyarlı...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 4
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 4
+  [FAIL] Term: 'tablet' not in Page 4
+  [FAIL] Term: '500 mg parasetamol' not in Page 4
+  [FAIL] Term: '20 tablet' not in Page 4
+Page 5 Norm: 6 • vücutta sıvı birikimi örneğin ayak bileklerinde şişlik ödem • halsizlik hasta hissetme • yükselm...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 5
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 5
+  [FAIL] Term: 'tablet' not in Page 5
+  [FAIL] Term: '500 mg parasetamol' not in Page 5
+  [FAIL] Term: '20 tablet' not in Page 5
+Page 6 Norm: 7 • kanın pıhtılaşmasının engellenmesi trombosit agregasyonu inhibisyonu aşağıdaki yan etkiler temel...
+  [FAIL] Term: 'parol 500 mg tablet' not in Page 6
+  [FAIL] Term: 'spi̇ri̇n® 100 mg tablet' not in Page 6
+  [FAIL] Term: 'tablet' not in Page 6
+  [FAIL] Term: '500 mg parasetamol' not in Page 6
+  [FAIL] Term: '20 tablet' not in Page 6
