@@ -832,3 +832,65 @@ Term: 'A'
 Norm: 'A'
 Page: 0
 Found via search_for: [263.6780090332031, 64.30799865722656, 272.3420104980469, 77.59200286865234]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [263.4380187988281, 71.26795959472656, 272.1020202636719, 84.55196380615234]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [218.85198974609375, 103.08796691894531, 255.60198974609375, 116.3719711303711]
+
+--- Click Row ---
+Term: '30°C altındaki oda sıcaklığında saklayınız. Orijinal ambalajında saklayınız.'
+Norm: '30°C altındaki oda sıcaklığında saklayınız. Orijinal ambalajında saklayınız.'
+Page: 11
+Found via search_for: [84.96002197265625, 304.5597839355469, 447.23980712890625, 320.7237854003906]
+
+--- Click Row ---
+Term: '20 tablet'
+Norm: '20 tablet'
+Page: 0
+Found via search_for: [146.87998962402344, 605.6400146484375, 188.49598693847656, 621.8040161132812]
+
+--- Click Row ---
+Term: 'Her bir tablet 75 mg diklofenak sodyum içerir.'
+Norm: 'Her bir tablet 75 mg diklofenak sodyum içerir.'
+Page: 0
+Found via search_for: [173.04000854492188, 154.5599822998047, 396.8399658203125, 170.72398376464844]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [267.4800109863281, 112.12799072265625, 296.7959899902344, 128.73599243164062]
+Building text tab...
+
+--- Click Row ---
+Term: 'Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg'
+Norm: 'Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg'
+Page: 0
+Found via search_for: [186.52999877929688, 147.3679962158203, 510.5299377441406, 160.65199279785156]
+
+--- Click Row ---
+Term: 'A'
+Norm: 'A'
+Page: 0
+Found via search_for: [263.6780090332031, 64.30799865722656, 272.3420104980469, 77.59200286865234]
+
+--- Click Row ---
+Term: 'Krem'
+Norm: 'Krem'
+Page: 0
+Found via search_for: [364.05804443359375, 693.927978515625, 388.634033203125, 707.2119750976562]
+
+--- Click Row ---
+Term: '25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız.'
+Norm: '25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız.'
+Page: 6
+Found via search_for: [92.51998138427734, 576.6000366210938, 104.51998138427734, 592.7640380859375]
+Building text tab...

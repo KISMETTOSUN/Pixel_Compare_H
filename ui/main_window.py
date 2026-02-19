@@ -8,12 +8,10 @@ import os
 import os
 import openpyxl
 
-class MainWindow(ctk.CTk):
-    def __init__(self):
-        super().__init__()
-
-        self.title("Document Control App")
-        self.geometry("1100x700")
+class ProspektusFrame(ctk.CTkFrame):
+    def __init__(self, parent, on_back=None):
+        super().__init__(parent, fg_color="transparent")
+        self.on_back = on_back
         
         self.pdf_renderer = PDFRenderer()
         self.analysis_engine = AnalysisEngine()
@@ -58,12 +56,16 @@ class MainWindow(ctk.CTk):
         self.sidebar_frame.grid(row=0, column=0, sticky="nsew")
         self.sidebar_frame.grid_rowconfigure(8, weight=1) # Push content up
 
-        self.logo_label = ctk.CTkLabel(self.sidebar_frame, text="DocControl", font=ctk.CTkFont(size=20, weight="bold"))
-        self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
+        # Back button
+        self.back_btn = ctk.CTkButton(self.sidebar_frame, text="← Ana Sayfa", command=self._go_home, 
+                                       fg_color="#C0392B", hover_color="#E74C3C", width=120)
+        self.back_btn.grid(row=0, column=0, padx=20, pady=(10, 5), sticky="w")
+
+        self.logo_label = ctk.CTkLabel(self.sidebar_frame, text="Prospektüs Kontrolü", font=ctk.CTkFont(size=16, weight="bold"))
+        self.logo_label.grid(row=0, column=0, padx=20, pady=(10, 5), sticky="e")
 
         # Load Latest Button
         self.load_latest_btn = ctk.CTkButton(self.sidebar_frame, text="En Güncel Datayı Çek", command=self.load_latest_data, fg_color="#F39C12", hover_color="#D68910")
-        self.load_latest_btn.grid(row=0, column=0, padx=20, pady=(20, 10), sticky="e") # Put it next to Logo or replace logo? 
         # Better: Put it under logo.
         self.load_latest_btn.grid(row=1, column=0, padx=20, pady=(0, 20))
 
@@ -610,3 +612,7 @@ class MainWindow(ctk.CTk):
     def update_nav_buttons(self):
         self.prev_btn.configure(state="normal" if self.current_page > 0 else "disabled")
         self.next_btn.configure(state="normal" if self.current_page < self.total_pages - 1 else "disabled")
+
+    def _go_home(self):
+        if self.on_back:
+            self.on_back()
