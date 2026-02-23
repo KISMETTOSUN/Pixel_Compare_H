@@ -25,23 +25,27 @@ class PDFRenderer:
             print(f"Error loading PDF: {e}")
             return False
 
-    def get_new_page_image(self, page_num, display_width=None, display_height=None, highlight_rect=None):
+    def get_new_page_image(self, page_num, display_width=None, display_height=None, highlight_rect=None, zoom_percent=None):
         """
         Returns a CTkImage of the specified page, scaled to fit display area.
         highlight_rect: optional [x0, y0, x1, y1] from PDF coordinates to draw a red box.
+        zoom_percent: optional int (e.g. 25, 50, 75, 100). If provided, uses fixed zoom instead of auto-fit.
         """
         if not self.doc or page_num < 0 or page_num >= len(self.doc):
             return None
         
         page = self.doc.load_page(page_num)
         
-        # Calculate zoom to fit
-        zoom = 1.0
-        if display_width and display_height:
+        # Calculate zoom
+        if zoom_percent is not None:
+            zoom = zoom_percent / 100.0
+        elif display_width and display_height:
             rect = page.rect
             width_ratio = display_width / rect.width
             height_ratio = display_height / rect.height
             zoom = min(width_ratio, height_ratio) * 0.9 # 90% to leave some margin
+        else:
+            zoom = 1.0
             
         mat = fitz.Matrix(zoom, zoom)
         pix = page.get_pixmap(matrix=mat)

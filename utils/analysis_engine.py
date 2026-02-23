@@ -85,7 +85,7 @@ class AnalysisEngine:
                 if keyword:
                     strategies.append({"type": "with_keyword", "keyword": keyword})
         
-        # 5. Non-caps headings via "başlığ" pattern
+        # 5. Non-caps headings via "başlığ" or "başlı" pattern
         if "başlığ" in hint_lower or "başlı" in hint_lower:
             for marker in ["başlığının", "başlığı", "başlığ", "başlı"]:
                 if marker in hint_lower:
@@ -97,9 +97,25 @@ class AnalysisEngine:
                     for prefix in ["genellikle", "çoğunlukla", "veya", "ya da"]:
                         if before.lower().startswith(prefix):
                             before = before[len(prefix):].strip()
-                    if len(before) > 2:
+                    # Remove surrounding quotes
+                    before = before.strip('"').strip("'").strip()
+                    # Require at least 2 words to avoid single product-name matches
+                    if len(before) > 2 and len(before.split()) >= 2:
                         strategies.append({"type": "under_heading", "heading": before})
                     break
+        
+        # 6. "X gibi başlık" pattern (e.g. "ONÇEAİR'in saklanması gibi başlık altında")
+        if "gibi başl" in hint_lower:
+            idx = hint_lower.find("gibi başl")
+            before = hint[:idx].strip()
+            for sep in [".", ",", "!"]:
+                if sep in before:
+                    before = before.split(sep)[-1].strip()
+            for prefix in ["genellikle", "çoğunlukla", "veya", "ya da"]:
+                if before.lower().startswith(prefix):
+                    before = before[len(prefix):].strip()
+            if len(before) > 2:
+                strategies.append({"type": "under_heading", "heading": before})
         
         return strategies
 
@@ -296,6 +312,167 @@ class AnalysisEngine:
                             if rule["found"]:
                                 break
 
+            # PHASE 0b: Direct search for "Ürün Miktarı"
+            # Looks for patterns like "X tablet/kapsül halinde kullanıma sunulmuştur"
+            # or "ambalajlarda sunulmaktadır" etc.
+            for rule in rules_data:
+                if rule["found"]:
+                    continue
+                ref_lower = rule["ref_name"].lower()
+                if "miktar" not in ref_lower:
+                    continue
+                
+                quantity_markers = ["sunulmuştur", "sunulmaktadır", "sunulmustur", "sunulmaktadir",
+                                    "sunulmugtur", "sunulmaktadlr",  # OCR variants
+                                    "ambalajlarda", "ambalajda"]
+                
+                for page_num in range(len(doc)):
+                    if rule["found"]:
+                        break
+                    page = doc.load_page(page_num)
+                    raw_text = page.get_text("text") or ""
+                    lines = raw_text.split("\n")
+                    
+                    for i, line in enumerate(lines):
+                        line_stripped = line.strip()
+                        line_lower = line_stripped.lower()
+                        
+                        for marker in quantity_markers:
+                            if marker in line_lower:
+                                # Found the quantity line - use full line or combine with previous
+                                matched = line_stripped
+                                # If line is short, maybe the quantity info started on previous line
+                                if i > 0 and len(line_stripped) < 30:
+                                    prev = lines[i-1].strip()
+                                    if prev:
+                                        matched = prev + " " + line_stripped
+                                
+                                rule["found"] = True
+                                rule["matched_term"] = matched[:200]
+                                rule["search_phase"] = "direct_keyword"
+                                rule["locations"].append({
+                                    "page": page_num,
+                                    "rect": None,
+                                    "matched_term": matched[:200]
+                                })
+                                with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
+                                    f.write(f"[PHASE 0b MATCH] Row {rule['row_index']} '{rule['ref_name']}': Found '{matched[:80]}' on page {page_num}\n")
+                                break
+                        if rule["found"]:
+                            break
+
+            # PHASE 0c: Direct search for "Saklama Koşulu"
+            # Searches from last page backwards. Normalizes degree symbols.
+            # Strategy 1: Find "saklanması" heading -> get temperature line below
+            # Strategy 2: Direct search for "25°C/30°C" + "sakla" pattern
+            for rule in rules_data:
+                if rule["found"]:
+                    continue
+                ref_lower = rule["ref_name"].lower()
+                if "saklama" not in ref_lower:
+                    continue
+                
+                def normalize_degree(text):
+                    """Normalize all degree symbol variants to standard °"""
+                    text = text.replace("\uf0b0", "°")
+                    # "25oC" or "25 oC" -> "25°C" (lowercase o before C)
+                    text = re.sub(r'(\d)\s*o\s*C', r'\1°C', text)
+                    # "25 °C" -> "25°C" (remove space before °)  
+                    text = re.sub(r'(\d)\s+°', r'\1°', text)
+                    return text
+                
+                storage_headings = ["saklanması", "saklanmasi", "saklanmasr"]
+                
+                # Strategy 1: Find heading from last page backwards
+                for page_num in range(len(doc) - 1, -1, -1):
+                    if rule["found"]:
+                        break
+                    page = doc.load_page(page_num)
+                    raw_text = normalize_degree(page.get_text("text") or "")
+                    lines = raw_text.split("\n")
+                    
+                    for i, line in enumerate(lines):
+                        line_lower = line.strip().lower()
+                        
+                        is_heading = any(sh in line_lower for sh in storage_headings)
+                        
+                        if is_heading:
+                            # Collect content lines below heading
+                            content_lines = []
+                            for j in range(i+1, min(i+10, len(lines))):
+                                stripped = lines[j].strip()
+                                if stripped and len(stripped) >= 2:
+                                    content_lines.append(stripped)
+                            
+                            # Also build a joined version for PDFs with split lines
+                            joined_content = " ".join(content_lines).lower()
+                            
+                            # Priority 1: Find line with temperature (°C)
+                            matched_line = None
+                            for cl in content_lines:
+                                if "°c" in cl.lower():
+                                    matched_line = cl
+                                    break
+                            
+                            # Priority 1b: If no single line has °C, check joined text
+                            if not matched_line and "°c" in joined_content:
+                                # Rejoin the first few lines that form the temperature sentence
+                                temp_parts = []
+                                for cl in content_lines:
+                                    temp_parts.append(cl)
+                                    combined = " ".join(temp_parts)
+                                    if "sakla" in combined.lower() or "." in cl:
+                                        matched_line = combined
+                                        break
+                            
+                            # Priority 2: Fallback to "sakla" + "oda" pattern (not generic ambalaj line)
+                            if not matched_line:
+                                for cl in content_lines:
+                                    cl_lower = cl.lower()
+                                    if "sakla" in cl_lower and "oda" in cl_lower:
+                                        matched_line = cl
+                                        break
+                            
+                            if matched_line:
+                                    rule["found"] = True
+                                    rule["matched_term"] = matched_line[:200]
+                                    rule["search_phase"] = "direct_keyword"
+                                    rule["locations"].append({
+                                        "page": page_num,
+                                        "rect": None,
+                                        "matched_term": matched_line[:200]
+                                    })
+                                    with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
+                                        f.write(f"[PHASE 0c MATCH] Row {rule['row_index']} '{rule['ref_name']}': Found '{matched_line[:80]}' on page {page_num}\n")
+                        
+                        if rule["found"]:
+                            break
+                
+                # Strategy 2: If heading not found, search for direct "°C" + "sakla" pattern
+                if not rule["found"]:
+                    for page_num in range(len(doc) - 1, -1, -1):
+                        if rule["found"]:
+                            break
+                        page = doc.load_page(page_num)
+                        raw_text = normalize_degree(page.get_text("text") or "")
+                        lines = raw_text.split("\n")
+                        
+                        for line in lines:
+                            stripped = line.strip()
+                            stripped_lower = stripped.lower()
+                            if "°c" in stripped_lower and any(kw in stripped_lower for kw in ["sakla", "oda s"]):
+                                rule["found"] = True
+                                rule["matched_term"] = stripped[:200]
+                                rule["search_phase"] = "direct_keyword"
+                                rule["locations"].append({
+                                    "page": page_num,
+                                    "rect": None,
+                                    "matched_term": stripped[:200]
+                                })
+                                with open("debug_analysis_engine.txt", "a", encoding="utf-8") as f:
+                                    f.write(f"[PHASE 0c MATCH] Row {rule['row_index']} '{rule['ref_name']}': Found '{stripped[:80]}' on page {page_num}\n")
+                                break
+
             # 2. PHASE 1: Search C column examples directly
             for page_num in range(len(doc)):
                 page = doc.load_page(page_num)
@@ -316,6 +493,9 @@ class AnalysisEngine:
                     
                     for st in sub_terms:
                         st_norm = self.normalize_text(st)
+                        # Skip very short terms (e.g. single char "A") - too unreliable
+                        if len(st_norm) < 3:
+                            continue
                         if st_norm and st_norm in page_text_norm:
                             rule["found"] = True
                             rule["matched_term"] = st

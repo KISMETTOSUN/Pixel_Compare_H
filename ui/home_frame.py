@@ -4,7 +4,7 @@ import os
 
 
 class HomeFrame(ctk.CTkFrame):
-    """Ana sayfa - 2 modül seçimi: Prospektüs Kontrolü ve Pixel Kontrol"""
+    """Ana sayfa - 2 modül seçimi: Prospektüs Kontrolü ve Tasarım Karşılaştır"""
     
     def __init__(self, parent, on_prospektus=None, on_pixel=None):
         super().__init__(parent)
@@ -56,10 +56,10 @@ class HomeFrame(ctk.CTkFrame):
             row=0
         )
         
-        # Card 2: Pixel Kontrol
+        # Card 2: Tasarım Karşılaştır
         self._create_card(
             cards_frame,
-            title="🔍  Pixel Kontrol",
+            title="🔍  Tasarım Karşılaştır",
             command=self._on_pixel_click,
             row=1
         )

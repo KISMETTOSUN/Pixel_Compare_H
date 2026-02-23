@@ -16,6 +16,7 @@ class ProspektusFrame(ctk.CTkFrame):
         self.pdf_renderer = PDFRenderer()
         self.analysis_engine = AnalysisEngine()
         self.current_page = 0
+        self.zoom_level = 150  # Default zoom 150%
         self.total_pages = 0
         self.analysis_results_map = {} # Map row_index to result dict
         self.row_data_map = {} # Map row_index to full row data tuple from Excel
@@ -33,13 +34,33 @@ class ProspektusFrame(ctk.CTkFrame):
         self.main_frame.grid_rowconfigure(0, weight=1)
         self.main_frame.grid_columnconfigure(0, weight=1)
         
-        # Scrollable frame for PDF content if needed, or just a Label
-        self.pdf_display_label = ctk.CTkLabel(self.main_frame, text="")
-        self.pdf_display_label.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
+        # Scrollable canvas for PDF content (supports zoom + scroll)
+        from tkinter import Canvas
+        self.pdf_canvas = Canvas(self.main_frame, bg="#333333", highlightthickness=0)
+        self.pdf_canvas.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
+        
+        self.pdf_v_scroll = ttk.Scrollbar(self.main_frame, orient="vertical", command=self.pdf_canvas.yview)
+        self.pdf_v_scroll.grid(row=0, column=1, sticky="ns")
+        self.pdf_h_scroll = ttk.Scrollbar(self.main_frame, orient="horizontal", command=self.pdf_canvas.xview)
+        self.pdf_h_scroll.grid(row=1, column=0, sticky="ew")
+        self.pdf_canvas.configure(yscrollcommand=self.pdf_v_scroll.set, xscrollcommand=self.pdf_h_scroll.set)
+        
+        self.main_frame.grid_columnconfigure(0, weight=1)
+        self.main_frame.grid_columnconfigure(1, weight=0)
+        self.main_frame.grid_rowconfigure(0, weight=1)
+        self.main_frame.grid_rowconfigure(1, weight=0)
+        
+        # Keep reference to the displayed image
+        self._pdf_photo_image = None
+        self._pdf_canvas_item = None
+        
+        # Mouse wheel scrolling
+        self.pdf_canvas.bind("<MouseWheel>", lambda e: self.pdf_canvas.yview_scroll(int(-1*(e.delta/120)), "units"))
+        self.pdf_canvas.bind("<Shift-MouseWheel>", lambda e: self.pdf_canvas.xview_scroll(int(-1*(e.delta/120)), "units"))
         
         # Navigation Frame
         self.nav_frame = ctk.CTkFrame(self.main_frame, height=40)
-        self.nav_frame.grid(row=1, column=0, sticky="ew", padx=10, pady=10)
+        self.nav_frame.grid(row=2, column=0, columnspan=2, sticky="ew", padx=10, pady=10)
         
         self.prev_btn = ctk.CTkButton(self.nav_frame, text="Previous", command=self.prev_page, state="disabled")
         self.prev_btn.pack(side="left", padx=10, pady=5)
@@ -49,6 +70,15 @@ class ProspektusFrame(ctk.CTkFrame):
         
         self.next_btn = ctk.CTkButton(self.nav_frame, text="Next", command=self.next_page, state="disabled")
         self.next_btn.pack(side="left", padx=10, pady=5)
+        
+        # Zoom Controls
+        zoom_label = ctk.CTkLabel(self.nav_frame, text="Ölçek:")
+        zoom_label.pack(side="left", padx=(30, 5), pady=5)
+        
+        self.zoom_options = ["Sığdır", "25%", "50%", "75%", "100%", "125%", "150%"]
+        self.zoom_var = ctk.StringVar(value="150%")
+        self.zoom_menu = ctk.CTkOptionMenu(self.nav_frame, values=self.zoom_options, variable=self.zoom_var, command=self._on_zoom_change, width=100)
+        self.zoom_menu.pack(side="left", padx=5, pady=5)
 
     def setup_sidebar(self):
         # Create sidebar frame with widgets
@@ -309,9 +339,15 @@ class ProspektusFrame(ctk.CTkFrame):
 
         # Check if clicked on "view" column
         if column_id == "#1":
-            # Open Detail Window with FULL data
-            full_data = self.row_data_map.get(row_index_excel, ())
-            self.open_detail_window(full_data, row_index_excel)
+            # Open Detail Window with treeview data (Ref, Sonuç, Status)
+            values = self.rule_tree.item(item_id, "values")
+            # values = (view_icon, ref, sonuç, status)
+            tree_data = {
+                "ref": values[1] if len(values) > 1 else "",
+                "sonuc": values[2] if len(values) > 2 else "",
+                "status": values[3] if len(values) > 3 else ""
+            }
+            self.open_detail_window(tree_data, row_index_excel)
             return # Do not jump to PDF
 
         # If not view column, proceed to PDF Jump
@@ -344,6 +380,23 @@ class ProspektusFrame(ctk.CTkFrame):
                             found_rects = page.search_for(term) 
                             if not found_rects:
                                 found_rects = page.search_for(term_norm)
+                            
+                            # 1b. Try with degree symbol variants (°C -> oC, etc.)
+                            if not found_rects and "°" in term_norm:
+                                # PDF might have "oC" instead of "°C"
+                                alt_term = term_norm.replace("°", "o")
+                                found_rects = page.search_for(alt_term)
+                            if not found_rects and "°" in term_norm:
+                                alt_term = term_norm.replace("°", "\uf0b0")
+                                found_rects = page.search_for(alt_term)
+                                
+                            # 1c. Try shorter substring (first meaningful part before period)
+                            if not found_rects and len(term_norm) > 30:
+                                short_term = term_norm.split(".")[0].strip()
+                                if short_term and len(short_term) > 10:
+                                    found_rects = page.search_for(short_term)
+                                    if not found_rects and "°" in short_term:
+                                        found_rects = page.search_for(short_term.replace("°", "o"))
                                 
                             if found_rects:
                                 r = found_rects[0]
@@ -352,6 +405,9 @@ class ProspektusFrame(ctk.CTkFrame):
                             else:
                                 # 2. Fallback: Word Sequence Search (Robust for newlines/spacing/punctuation)
                                 search_words = term_norm.lower().split()
+                                # Also try with degree symbol reversed
+                                if "°" in term_norm:
+                                    search_words = term_norm.replace("°", "o").lower().split()
                                 if search_words:
                                     page_words = page.get_text("words") # list of (x0,y0,x1,y1, "word", block, line, word_no)
                                     
@@ -408,22 +464,18 @@ class ProspektusFrame(ctk.CTkFrame):
         if not data:
             return
             
-        # Format data string
-        # Side-by-side format: [A] Val1  |  [B] Val2  |  [C] Val3
-        display_parts = []
-        for i, val in enumerate(data):
-            col_letter = chr(65 + i) if i < 26 else f"Col{i}" 
-            val_str = str(val) if val is not None else ""
-            display_parts.append(f"[{col_letter}] {val_str}")
-            
-        display_text = "  |  ".join(display_parts)
+        # Format: Ref, Sonuç, Status from treeview
+        ref = data.get("ref", "")
+        sonuc = data.get("sonuc", "")
+        status = data.get("status", "")
+        
+        display_text = f"Ref:  {ref}\n\nSonuç:  {sonuc}\n\nStatus:  {status}"
         
         # Check if window already exists
         if hasattr(self, 'detail_window') and self.detail_window is not None and self.detail_window.winfo_exists():
-            self.detail_window.lift() # Bring to front
-            self.detail_window.focus_force() # Focus to catch events
-            # Update content
-            self.detail_ref_label.configure(text=f"Row {row_index} Details")
+            self.detail_window.lift()
+            self.detail_window.focus_force()
+            self.detail_ref_label.configure(text=f"Satır {row_index} Detayı")
             self.detail_text_box.configure(state="normal")
             self.detail_text_box.delete("0.0", "end")
             self.detail_text_box.insert("0.0", display_text)
@@ -432,28 +484,23 @@ class ProspektusFrame(ctk.CTkFrame):
 
         # Create new window
         self.detail_window = ctk.CTkToplevel(self)
-        self.detail_window.title(f"Row {row_index} Details")
-        self.detail_window.geometry("1000x200") # Wider, less height
-        self.detail_window.attributes("-topmost", True) # Keep on top
+        self.detail_window.title(f"Satır {row_index} Detayı")
+        self.detail_window.geometry("600x200")
+        self.detail_window.attributes("-topmost", True)
         
         # Bind Auto-Close events
         self.detail_window.bind("<FocusOut>", self.close_detail_window)
         self.detail_window.bind("<Key>", self.close_detail_window)
         
-        self.detail_ref_label = ctk.CTkLabel(self.detail_window, text=f"Row {row_index} Details", font=ctk.CTkFont(size=14, weight="bold"))
+        self.detail_ref_label = ctk.CTkLabel(self.detail_window, text=f"Satır {row_index} Detayı", font=ctk.CTkFont(size=14, weight="bold"))
         self.detail_ref_label.pack(padx=20, pady=(20, 10), fill="x")
         
-        # Use Textbox to allow scrolling if content is very wide, but keep it one line if possible? 
-        # Textbox wraps by default. We can disable wrap to force horizontal scrolling or let it wrap if huge.
-        # "yan yana olsun" usually implies one long line or wrapping.
-        # Let's keep wrap="word" so it doesn't hide content, but with 1000px width it should fit most.
         self.detail_text_box = ctk.CTkTextbox(self.detail_window, wrap="word", height=100)
         self.detail_text_box.pack(padx=20, pady=(0, 20), fill="both", expand=True)
         
         self.detail_text_box.insert("0.0", display_text)
-        self.detail_text_box.configure(state="disabled") # Read-only
+        self.detail_text_box.configure(state="disabled")
         
-        # Force focus so FocusOut can trigger later
         self.detail_window.focus_force()
 
     # ... (existing code) ...
@@ -573,28 +620,32 @@ class ProspektusFrame(ctk.CTkFrame):
                 except Exception:
                      messagebox.showerror("Error", "Failed to load PDF.")
 
+    def _on_zoom_change(self, choice):
+        """Called when zoom dropdown changes."""
+        if choice == "Sığdır":
+            self.zoom_level = None
+        else:
+            self.zoom_level = int(choice.replace("%", ""))
+        self.show_page(self.current_page)
+
     def show_page(self, page_num, highlight_rect=None):
-        img = self.pdf_renderer.get_new_page_image(page_num, display_width=self.main_frame.winfo_width(), display_height=self.main_frame.winfo_height())
-        
-        # If we have a highlight rect, we need to draw it. 
-        # Since ctk.CTkImage is a wrapper, we should probably draw on the PIL image BEFORE creating CTkImage.
-        # But get_new_page_image creates it. 
-        # Option A: Modify get_new_page_image to accept highlight_rect.
-        # Option B: Re-implement image generation here using PDFRenderer's internals (less clean).
-        # Let's modify PDFRenderer to support generic overlay drawing or pass a callback?
-        # Simpler: Modify get_new_page_image in pdf_renderer.py to accept optional highlight rect.
-        # OR: Do it here if I have the PIL image. 
-        # get_new_page_image returns CTkImage. I can't easily modify the internal PIL image of a CTkImage.
-        # So I must pass the highlight request to `pdf_renderer`.
-        # For this step, I will modify `pdf_renderer.py` as well.
-        # But I'm in this file now. I'll pass `highlight_rect` to `get_new_page_image`. 
-        # I need to update `pdf_renderer.py` concurrently or next.
-        
-        # Let's assume I will update `pdf_renderer.py` to accept `highlight_rect`.
-        img = self.pdf_renderer.get_new_page_image(page_num, display_width=self.main_frame.winfo_width(), display_height=self.main_frame.winfo_height(), highlight_rect=highlight_rect)
+        if self.zoom_level is not None:
+            # Fixed zoom - no auto-fit
+            img = self.pdf_renderer.get_new_page_image(page_num, highlight_rect=highlight_rect, zoom_percent=self.zoom_level)
+        else:
+            # Auto-fit to display area
+            img = self.pdf_renderer.get_new_page_image(page_num, display_width=self.pdf_canvas.winfo_width(), display_height=self.pdf_canvas.winfo_height(), highlight_rect=highlight_rect)
         
         if img:
-            self.pdf_display_label.configure(image=img, text="")
+            # Get the PIL image from CTkImage for canvas display
+            from PIL import ImageTk
+            pil_img = img._light_image  # Access underlying PIL image
+            self._pdf_photo_image = ImageTk.PhotoImage(pil_img)
+            
+            self.pdf_canvas.delete("all")
+            self._pdf_canvas_item = self.pdf_canvas.create_image(0, 0, anchor="nw", image=self._pdf_photo_image)
+            self.pdf_canvas.configure(scrollregion=(0, 0, pil_img.width, pil_img.height))
+            
             self.page_label.configure(text=f"Page {page_num + 1} of {self.total_pages}")
     
     def next_page(self):

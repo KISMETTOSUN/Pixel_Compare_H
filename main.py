@@ -6,7 +6,7 @@ from ui.pixel_compare import PixelCompareFrame
 
 
 class App(ctk.CTk):
-    """Unified launcher: Home Screen -> Prospektüs Kontrolü / Pixel Kontrol"""
+    """Unified launcher: Home Screen -> Prospektüs Kontrolü / Tasarım Karşılaştır"""
     
     def __init__(self):
         super().__init__()
@@ -44,7 +44,7 @@ class App(ctk.CTk):
     def show_pixel(self):
         self._clear_frame()
         self.geometry("1400x900")
-        self.title("Üçgen - Pixel Kontrol")
+        self.title("Üçgen - Tasarım Karşılaştır")
         
         # Pixel Compare uses plain tkinter, need to set ttk style
         style = ttk.Style()
