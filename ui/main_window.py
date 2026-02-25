@@ -447,16 +447,17 @@ class ProspektusFrame(ctk.CTkFrame):
                         print(f"Error lazy loading rect: {e}")
                         with open("debug_log.txt", "a", encoding="utf-8") as f: f.write(f"Error: {e}\n")
                 
-                # ALWAYS Jump to page, even if rect is None
-                self.current_page = first_loc["page"]
-                rect = first_loc.get("rect")
-                
                 if rect:
                     self.show_page(self.current_page, highlight_rect=rect)
                 else:
-                    # Show page without highlight and warn
-                    self.show_page(self.current_page)
-                    messagebox.showwarning("Highlight Failed", f"Item found on Page {self.current_page + 1}, but exact text location could not be highlighted.\n\nTerm: {result.get('term')}")
+                    # Smart Highlight attempt (v1.1 Improvement)
+                    term = result.get("term", "")
+                    smart_rect = self._smart_highlight_on_page(self.current_page, term)
+                    if smart_rect:
+                        self.show_page(self.current_page, highlight_rect=smart_rect)
+                    else:
+                        # Fallback: Just show the page without highlighting (silent)
+                        self.show_page(self.current_page)
                 
                 self.update_nav_buttons()
 
@@ -503,7 +504,38 @@ class ProspektusFrame(ctk.CTkFrame):
         
         self.detail_window.focus_force()
 
-    # ... (existing code) ...
+    def _smart_highlight_on_page(self, page_num, term):
+        """Robust fuzzy search on a specific page for highlighting."""
+        try:
+            if not self.pdf_renderer.doc: return None
+            page = self.pdf_renderer.doc.load_page(page_num)
+            term_str = str(term)
+            term_norm = " ".join(term_str.split())
+            
+            # 1. Try composite term split (if term contains '-')
+            if "-" in term_str:
+                parts = [p.strip() for p in term_str.split("-") if len(p.strip()) > 5]
+                for p in parts:
+                    res = page.search_for(p)
+                    if res: return [res[0].x0, res[0].y0, res[0].x1, res[0].y1]
+
+            # 2. Try start of sentence (first 4 significant words)
+            words = term_norm.split()
+            if len(words) >= 3:
+                anchor = " ".join(words[:4])
+                res = page.search_for(anchor)
+                if res: return [res[0].x0, res[0].y0, res[0].x1, res[0].y1]
+
+            # 3. Try anchor keywords (specifically for storage/quantity/forms)
+            anchors = ["25°C", "30°C", "25 °C", "30 °C", "saklayınız", "sunulmaktadır", "tablettir", "kapsüldür"]
+            for a in anchors:
+                if a.lower() in term_str.lower():
+                    res = page.search_for(a)
+                    if res: return [res[0].x0, res[0].y0, res[0].x1, res[0].y1]
+        except Exception:
+            pass
+        return None
+
 
     def close_detail_window(self, event=None):
         if hasattr(self, 'detail_window') and self.detail_window:

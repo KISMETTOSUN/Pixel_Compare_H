@@ -66,7 +66,7 @@ class HomeFrame(ctk.CTkFrame):
         
         # Footer
         ctk.CTkLabel(
-            self, text="v1.0",
+            self, text="v1.2",
             font=ctk.CTkFont(size=11),
             text_color="#555555"
         ).grid(row=2, column=0, sticky="s", pady=(0, 15))

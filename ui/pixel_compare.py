@@ -134,32 +134,34 @@ class FilePanel(tk.Frame):
         header_frame = tk.Frame(self, bg="#1e1e1e")
         header_frame.pack(fill=tk.X, pady=(0, 5))
 
+        # Sol: Panel başlığı (Master / Print)
         tk.Label(
             header_frame, text=title, font=("Segoe UI", 10, "bold"),
             bg="#1e1e1e", fg="#bbbbbb"
         ).pack(side=tk.LEFT)
 
-        # Butonlar ve Dosya Adı için sağ frame
+        # Sağ: Rotasyon butonları
         right_header = tk.Frame(header_frame, bg="#1e1e1e")
         right_header.pack(side=tk.RIGHT)
 
         tk.Button(
-            right_header, text="⟲", font=("Segoe UI", 10), 
+            right_header, text="⟲", font=("Segoe UI", 10),
             bg="#333333", fg="white", bd=0, padx=8, cursor="hand2",
             command=self.rotate_left
         ).pack(side=tk.LEFT, padx=2)
 
         tk.Button(
-            right_header, text="⟳", font=("Segoe UI", 10), 
+            right_header, text="⟳", font=("Segoe UI", 10),
             bg="#333333", fg="white", bd=0, padx=8, cursor="hand2",
             command=self.rotate_right
         ).pack(side=tk.LEFT, padx=2)
 
+        # Orta: Dosya ismi (sol ve sağ arasında ortalanmış)
         self.file_label = tk.Label(
-            right_header, text="Dosya seçilmedi", font=("Segoe UI", 9, "italic"),
-            bg="#1e1e1e", fg="#666666", width=20, anchor="e"
+            header_frame, text="Dosya seçilmedi", font=("Segoe UI", 9, "italic"),
+            bg="#1e1e1e", fg="#666666", anchor="center"
         )
-        self.file_label.pack(side=tk.LEFT, padx=5)
+        self.file_label.pack(side=tk.LEFT, fill=tk.X, expand=True)
 
         # Görsel Alanı
         self.preview_frame = tk.Frame(self, bg="#2b2b2b", bd=1, relief=tk.SUNKEN)
@@ -194,7 +196,7 @@ class FilePanel(tk.Frame):
         
     def _update_label_with_page_count(self):
         filename = os.path.basename(self.file_path)
-        if len(filename) > 20: filename = filename[:17] + "..."
+        if len(filename) > 50: filename = filename[:47] + "..."
         
         if self.total_pages > 1:
             self.file_label.config(text=f"{filename} ({self.total_pages} Sayfa)", fg="#4fc3f7")
@@ -205,7 +207,7 @@ class FilePanel(tk.Frame):
         self.file_path = path
         # Initial label set
         filename = os.path.basename(path)
-        if len(filename) > 20: filename = filename[:17] + "..."
+        if len(filename) > 50: filename = filename[:47] + "..."
         self.file_label.config(text=filename, fg="#4fc3f7")
 
         ext = path.lower().split('.')[-1]
@@ -1125,38 +1127,43 @@ class PixelCompareFrame(tk.Frame):
                   command=self.left_panel.clear_selection).pack(fill=tk.X, pady=2)
 
 
-        # Orta — Compare butonu
-        middle = tk.Frame(content, bg="#121212", width=80)
+        # Orta — Compare & Swap butonları
+        middle = tk.Frame(content, bg="#121212", width=90)
         middle.pack(side=tk.LEFT, fill=tk.Y, padx=4)
         middle.pack_propagate(False)
 
-        spacer = tk.Frame(middle, bg="#121212")
-        spacer.pack(expand=True)
+        # Üst boşluk (butonları ortaya almak için)
+        spacer_top = tk.Frame(middle, bg="#121212")
+        spacer_top.pack(expand=True, fill=tk.Y)
 
         self.compare_btn = tk.Button(
             middle,
             text="⚡\nCompare",
             font=("Segoe UI", 11, "bold"),
-            bg="#ff6b35", fg="white",
-            activebackground="#e55a2b", activeforeground="white",
-            relief=tk.FLAT, padx=8, pady=16,
+            bg="#C0392B", fg="white",
+            activebackground="#E74C3C", activeforeground="white",
+            relief=tk.FLAT, width=8, height=3,
             cursor="hand2",
             command=self._compare
         )
-        self.compare_btn.pack(pady=4)
+        self.compare_btn.pack(pady=4, fill=tk.X, padx=4)
 
         # Swap butonu
         self.swap_btn = tk.Button(
             middle,
             text="⇄\nSwap",
-            font=("Segoe UI", 9),
+            font=("Segoe UI", 11, "bold"),
             bg="#555555", fg="white",
             activebackground="#777777",
-            relief=tk.FLAT, padx=8, pady=8,
+            relief=tk.FLAT, width=8, height=3,
             cursor="hand2",
             command=self._swap_panels
         )
-        self.swap_btn.pack(pady=4)
+        self.swap_btn.pack(pady=4, fill=tk.X, padx=4)
+
+        # Alt boşluk (butonları ortaya almak için)
+        spacer_bot = tk.Frame(middle, bg="#121212")
+        spacer_bot.pack(expand=True, fill=tk.Y)
 
         # Print Selection Controls
         right_controls = tk.Frame(content, bg="#121212")
