@@ -894,3 +894,579 @@ Norm: '25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız.'
 Page: 6
 Found via search_for: [92.51998138427734, 576.6000366210938, 104.51998138427734, 592.7640380859375]
 Building text tab...
+
+--- Click Row ---
+Term: '25°C'
+Norm: '25°C'
+Page: 5
+Found via search_for: [85.10399627685547, 446.3380126953125, 97.10399627685547, 459.62200927734375]
+
+--- Click Row ---
+Term: 'Ambalajdaki son kullanma tarihinden sonra GALVİKS ADVANCE’i kullanmayınız.'
+Norm: 'Ambalajdaki son kullanma tarihinden sonra GALVİKS ADVANCE’i kullanmayınız.'
+Page: 5
+Found via search_for: [85.10399627685547, 561.177978515625, 348.1659851074219, 574.4619750976562]
+
+--- Click Row ---
+Term: 'Krem'
+Norm: 'Krem'
+Page: 0
+Found via search_for: [364.05804443359375, 693.927978515625, 388.634033203125, 707.2119750976562]
+
+--- Click Row ---
+Term: 'Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg'
+Norm: 'Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg'
+Page: 0
+Found via search_for: [186.52999877929688, 147.3679962158203, 510.5299377441406, 160.65199279785156]
+
+--- Click Row ---
+Term: 'GALVİKS ADVANCE 1000 mg + 200 mg/10 ml oral süspansiyon Ağızdan alınır. • Etkin maddeler: Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg'
+Norm: 'GALVİKS ADVANCE 1000 mg + 200 mg/10 ml oral süspansiyon Ağızdan alınır. • Etkin maddeler: Her bir 10 ml süspansiyon, 1000 mg sodyum aljinat ve 200 mg'
+Page: 0
+Found via search_for: [85.10399627685547, 94.92799377441406, 422.739990234375, 108.21199798583984]
+
+--- Click Row ---
+Term: 'ULTRAVER D-S FORTE 80 mg + 0,03638 mg / 2 mL Enjeksiyonluk Çözelti Diş etlerine uygulanır. ● Etkin madde:'
+Norm: 'ULTRAVER D-S FORTE 80 mg + 0,03638 mg / 2 mL Enjeksiyonluk Çözelti Diş etlerine uygulanır. ● Etkin madde:'
+Page: 0
+Found via search_for: [70.8239974975586, 91.08796691894531, 468.1000061035156, 104.3719711303711]
+
+--- Click Row ---
+Term: '1 mLʼde'
+Norm: '1 mLʼde'
+Page: 0
+Found via search_for: [70.8239974975586, 153.1280059814453, 111.7800064086914, 166.41200256347656]
+
+--- Click Row ---
+Term: '25°C altındaki oda sıcaklığında ve orijinal ambalajında saklayınız. Işıktan koruyunuz.'
+Norm: '25°C altındaki oda sıcaklığında ve orijinal ambalajında saklayınız. Işıktan koruyunuz.'
+Page: 8
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C altındaki oda sıcaklığında ve orijinal ambalajında saklayınız. Işıktan koruyunuz.'
+Norm: '25°C altındaki oda sıcaklığında ve orijinal ambalajında saklayınız. Işıktan koruyunuz.'
+Page: 8
+Candidates indices: []
+
+--- Click Row ---
+Term: '25ºC altındaki oda sıcaklığında saklayınız.'
+Norm: '25ºC altındaki oda sıcaklığında saklayınız.'
+Page: 6
+Found via search_for: [70.8239974975586, 563.0979614257812, 275.4700012207031, 576.3819580078125]
+
+--- Click Row ---
+Term: 'talimatı ile birlikte sunulmaktadır.'
+Norm: 'talimatı ile birlikte sunulmaktadır.'
+Page: 0
+Found via search_for: [70.8239974975586, 611.697998046875, 234.7080078125, 624.9819946289062]
+
+--- Click Row ---
+Term: 'Her bir yumuşak kapsül, 40 mg enzalutamid içerir.'
+Norm: 'Her bir yumuşak kapsül, 40 mg enzalutamid içerir.'
+Page: 0
+Found via search_for: [155.05999755859375, 150.4879913330078, 399.1540222167969, 163.77198791503906]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [218.85198974609375, 103.08796691894531, 255.60198974609375, 116.3719711303711]
+
+--- Click Row ---
+Term: 'ENZADRE 40 mg Yumuşak Kapsül Ağızdan alınır. • Etkin madde: Her bir yumuşak kapsül, 40 mg enzalutamid içerir.'
+Norm: 'ENZADRE 40 mg Yumuşak Kapsül Ağızdan alınır. • Etkin madde: Her bir yumuşak kapsül, 40 mg enzalutamid içerir.'
+Page: 0
+Found via search_for: [70.8239974975586, 103.08796691894531, 261.5299987792969, 116.3719711303711]
+
+--- Click Row ---
+Term: 'UPTRAVİ® 1000 mcg film kaplı tablet Ağızdan alınır.'
+Norm: 'UPTRAVİ® 1000 mcg film kaplı tablet Ağızdan alınır.'
+Page: 0
+Found via search_for: [70.8239974975586, 98.88801574707031, 125.42400360107422, 112.1720199584961]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [238.51998901367188, 98.88801574707031, 267.823974609375, 112.1720199584961]
+
+--- Click Row ---
+Term: 'Her bir film kaplı tablet 1000 mcg seleksipag içermektedir.'
+Norm: 'Her bir film kaplı tablet 1000 mcg seleksipag içermektedir.'
+Page: 0
+Found via search_for: [176.89999389648438, 154.0879669189453, 460.97802734375, 167.37196350097656]
+
+--- Click Row ---
+Term: 'UPTRAVİ, 60 tablet içeren blister ambalajlarda bulunur.'
+Norm: 'UPTRAVİ, 60 tablet içeren blister ambalajlarda bulunur.'
+Page: 1
+Found via search_for: [70.8239974975586, 167.8880157470703, 344.1099853515625, 181.17201232910156]
+
+--- Click Row ---
+Term: '30°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: '30°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 8
+Found via search_for: [70.8239974975586, 650.1279907226562, 82.8239974975586, 663.4119873046875]
+
+--- Click Row ---
+Term: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Norm: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Page: 0
+Found via search_for: [70.79998016357422, 95.68792724609375, 245.03997802734375, 112.2959213256836]
+
+--- Click Row ---
+Term: 'Krem'
+Norm: 'Krem'
+Page: 0
+Found via search_for: [70.79995727539062, 302.9997863769531, 98.01595306396484, 319.1637878417969]
+
+--- Click Row ---
+Term: 'Zink pirition'
+Norm: 'Zink pirition'
+Page: 0
+Found via search_for: [70.79997253417969, 164.63987731933594, 131.27996826171875, 180.8038787841797]
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: 'Zink pirition'
+Norm: 'Zink pirition'
+Page: 0
+Found via search_for: [70.79997253417969, 164.63987731933594, 131.27996826171875, 180.8038787841797]
+
+--- Click Row ---
+Term: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Norm: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Page: 0
+Found via search_for: [70.79998016357422, 95.68792724609375, 245.03997802734375, 112.2959213256836]
+
+--- Click Row ---
+Term: 'mikrokürecikler içerir. LANSOR, 14 ve 28 kapsül içeren kutularda kullanıma sunulmuştur.'
+Norm: 'mikrokürecikler içerir. LANSOR, 14 ve 28 kapsül içeren kutularda kullanıma sunulmuştur.'
+Page: 0
+Found via search_for: [92.30400085449219, 677.1279296875, 172.4600067138672, 690.4119262695312]
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+
+--- Click Row ---
+Term: 'Lansoprazol 30 mg'
+Norm: 'Lansoprazol 30 mg'
+Page: 0
+Found via search_for: [160.22000122070312, 174.9679718017578, 252.1699981689453, 188.25196838378906]
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [220.25, 126.60798645019531, 254.40199279785156, 139.89198303222656]
+
+--- Click Row ---
+Term: 'LANSOR 30 mg mikropellet kapsül Ağızdan alınır.'
+Norm: 'LANSOR 30 mg mikropellet kapsül Ağızdan alınır.'
+Page: 0
+Found via search_for: [70.94400024414062, 126.60798645019531, 257.33001708984375, 139.89198303222656]
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+
+--- Click Row ---
+Term: 'mikrokürecikler içerir. LANSOR, 14 ve 28 kapsül içeren kutularda kullanıma sunulmuştur.'
+Norm: 'mikrokürecikler içerir. LANSOR, 14 ve 28 kapsül içeren kutularda kullanıma sunulmuştur.'
+Page: 0
+Found via search_for: [92.30400085449219, 677.1279296875, 172.4600067138672, 690.4119262695312]
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: 'Zink pirition'
+Norm: 'Zink pirition'
+Page: 0
+Found via search_for: [70.79997253417969, 164.63987731933594, 131.27996826171875, 180.8038787841797]
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Norm: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Page: 0
+Found via search_for: [70.79998016357422, 95.68792724609375, 245.03997802734375, 112.2959213256836]
+
+--- Click Row ---
+Term: 'Krem'
+Norm: 'Krem'
+Page: 0
+Found via search_for: [70.79995727539062, 302.9997863769531, 98.01595306396484, 319.1637878417969]
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: 'Zink pirition'
+Norm: 'Zink pirition'
+Page: 0
+Found via search_for: [70.79997253417969, 164.63987731933594, 131.27996826171875, 180.8038787841797]
+
+--- Click Row ---
+Term: 'Krem'
+Norm: 'Krem'
+Page: 0
+Found via search_for: [70.79995727539062, 302.9997863769531, 98.01595306396484, 319.1637878417969]
+
+--- Click Row ---
+Term: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Norm: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Page: 0
+Found via search_for: [70.79998016357422, 95.68792724609375, 245.03997802734375, 112.2959213256836]
+
+--- Click Row ---
+Term: 'ASPİRİN, 20 tabletlik ambalajlarda sunulur.'
+Norm: 'ASPİRİN, 20 tabletlik ambalajlarda sunulur.'
+Page: 0
+Found via search_for: [130.44000244140625, 587.1600341796875, 344.760009765625, 603.3240356445312]
+
+--- Click Row ---
+Term: 'Her bir tablette 100 mg asetilsalisilik asit'
+Norm: 'Her bir tablette 100 mg asetilsalisilik asit'
+Page: 0
+Found via search_for: [201.95999145507812, 148.92002868652344, 413.2560119628906, 165.0840301513672]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [198.9600067138672, 93.40802001953125, 227.67601013183594, 110.0160140991211]
+
+--- Click Row ---
+Term: 'ASPİRİN® 100 mg tablet'
+Norm: 'ASPİRİN® 100 mg tablet'
+Page: 0
+Found via search_for: [96.5999984741211, 93.40802001953125, 145.94400024414062, 110.0160140991211]
+
+--- Click Row ---
+Term: '25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız.'
+Norm: '25°C altındaki oda sıcaklığında, kuru bir yerde saklayınız.'
+Page: 6
+Found via search_for: [92.51998138427734, 576.6000366210938, 104.51998138427734, 592.7640380859375]
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Norm: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Page: 0
+Found via search_for: [70.79998016357422, 95.68792724609375, 245.03997802734375, 112.2959213256836]
+
+--- Click Row ---
+Term: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Norm: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Page: 0
+Found via search_for: [70.79998016357422, 95.68792724609375, 245.03997802734375, 112.2959213256836]
+
+--- Click Row ---
+Term: 'Krem'
+Norm: 'Krem'
+Page: 0
+Found via search_for: [70.79995727539062, 302.9997863769531, 98.01595306396484, 319.1637878417969]
+
+--- Click Row ---
+Term: 'Zink pirition'
+Norm: 'Zink pirition'
+Page: 0
+Found via search_for: [70.79997253417969, 164.63987731933594, 131.27996826171875, 180.8038787841797]
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: 'LANSOR 30 mg mikropellet kapsül Ağızdan alınır.'
+Norm: 'LANSOR 30 mg mikropellet kapsül Ağızdan alınır.'
+Page: 0
+Found via search_for: [70.94400024414062, 126.60798645019531, 257.33001708984375, 139.89198303222656]
+
+--- Click Row ---
+Term: 'Kapsül'
+Norm: 'Kapsül'
+Page: 0
+Found via search_for: [220.25, 126.60798645019531, 254.40199279785156, 139.89198303222656]
+
+--- Click Row ---
+Term: 'Lansoprazol 30 mg'
+Norm: 'Lansoprazol 30 mg'
+Page: 0
+Found via search_for: [160.22000122070312, 174.9679718017578, 252.1699981689453, 188.25196838378906]
+
+--- Click Row ---
+Term: 'mikrokürecikler içerir. LANSOR, 14 ve 28 kapsül içeren kutularda kullanıma sunulmuştur.'
+Norm: 'mikrokürecikler içerir. LANSOR, 14 ve 28 kapsül içeren kutularda kullanıma sunulmuştur.'
+Page: 0
+Found via search_for: [92.30400085449219, 677.1279296875, 172.4600067138672, 690.4119262695312]
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+
+--- Click Row ---
+Term: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Norm: 'LANSOR’u 25°C’nin altındaki oda sıcaklığında saklayınız.'
+Page: 9
+Candidates indices: [73, 75, 83, 132, 141]
+Error: name 'fitz' is not defined
+Building text tab...
+
+--- Click Row ---
+Term: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Norm: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Page: 0
+Found via search_for: [70.79998016357422, 95.68792724609375, 245.03997802734375, 112.2959213256836]
+
+--- Click Row ---
+Term: 'Krem'
+Norm: 'Krem'
+Page: 0
+Found via search_for: [70.79995727539062, 302.9997863769531, 98.01595306396484, 319.1637878417969]
+
+--- Click Row ---
+Term: 'Zink pirition'
+Norm: 'Zink pirition'
+Page: 0
+Found via search_for: [70.79997253417969, 164.63987731933594, 131.27996826171875, 180.8038787841797]
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Norm: '1. BEŞERİ TIBBİ ÜRÜNÜN ADI ZETİON %2 süspansiyon 2. KALİTATİF VE KANTİTATİF BİLEŞİM'
+Page: 0
+Found via search_for: [70.79998016357422, 95.68792724609375, 245.03997802734375, 112.2959213256836]
+
+--- Click Row ---
+Term: 'Krem'
+Norm: 'Krem'
+Page: 0
+Found via search_for: [70.79995727539062, 302.9997863769531, 98.01595306396484, 319.1637878417969]
+
+--- Click Row ---
+Term: 'Zink pirition'
+Norm: 'Zink pirition'
+Page: 0
+Found via search_for: [70.79997253417969, 164.63987731933594, 131.27996826171875, 180.8038787841797]
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Norm: '25°C nin altındaki oda sıcaklığında ve ambalajında saklanmalıdır.'
+Page: 3
+Candidates indices: []
+
+--- Click Row ---
+Term: 'PAROL 500 mg tablet'
+Norm: 'PAROL 500 mg tablet'
+Page: 0
+Found via search_for: [68.04000854492188, 108.83995056152344, 176.25599670410156, 125.00394439697266]
+
+--- Click Row ---
+Term: 'Tablet'
+Norm: 'Tablet'
+Page: 0
+Found via search_for: [149.63999938964844, 108.83995056152344, 176.25599670410156, 125.00394439697266]
+
+--- Click Row ---
+Term: '500 mg parasetamol'
+Norm: '500 mg parasetamol'
+Page: 0
+Found via search_for: [68.04000854492188, 164.03990173339844, 165.21600341796875, 180.2039031982422]
+
+--- Click Row ---
+Term: '20 veya 30 tablet içeren blister ambalajlarda.'
+Norm: '20 veya 30 tablet içeren blister ambalajlarda.'
+Page: 9
+Found via search_for: [68.04000854492188, 124.43992614746094, 283.44000244140625, 140.6039276123047]
+
+--- Click Row ---
+Term: '25°C’nin altındaki oda sıcaklığında saklanmalıdır.'
+Norm: '25°C’nin altındaki oda sıcaklığında saklanmalıdır.'
+Page: 9
+Found via search_for: [68.04000854492188, 83.03996276855469, 309.7199401855469, 99.2039566040039]
+Building text tab...
+Building text tab...
+Building text tab...
+Building text tab...
