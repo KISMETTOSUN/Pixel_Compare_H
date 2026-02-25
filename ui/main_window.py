@@ -357,11 +357,11 @@ class ProspektusFrame(ctk.CTkFrame):
             locations = result.get("locations", [])
             if locations:
                 first_loc = locations[0]
+                page_num = first_loc["page"]  # Her zaman burada tanımla
                 
                 # Check for Lazy Load (rect is None)
                 if first_loc["rect"] is None:
                     try:
-                        page_num = first_loc["page"]
                         # Use matched sub-term if available (Smart Search), else full term
                         term = first_loc.get("matched_term", result["term"])
                         # Normalize term: split and join to handle newlines/excess spaces
@@ -447,17 +447,23 @@ class ProspektusFrame(ctk.CTkFrame):
                         print(f"Error lazy loading rect: {e}")
                         with open("debug_log.txt", "a", encoding="utf-8") as f: f.write(f"Error: {e}\n")
                 
+                # Rect'i first_loc'dan al (lazy load sonrası dolu veya boş olabilir)
+                rect = first_loc.get("rect")
+                
                 if rect:
-                    self.show_page(self.current_page, highlight_rect=rect)
+                    self.current_page = page_num
+                    self.show_page(page_num, highlight_rect=rect)
                 else:
-                    # Smart Highlight attempt (v1.1 Improvement)
+                    # Smart Highlight attempt
                     term = result.get("term", "")
-                    smart_rect = self._smart_highlight_on_page(self.current_page, term)
+                    smart_rect = self._smart_highlight_on_page(page_num, term)
                     if smart_rect:
-                        self.show_page(self.current_page, highlight_rect=smart_rect)
+                        self.current_page = page_num
+                        self.show_page(page_num, highlight_rect=smart_rect)
                     else:
-                        # Fallback: Just show the page without highlighting (silent)
-                        self.show_page(self.current_page)
+                        # Fallback: Just show the page without highlighting
+                        self.current_page = page_num
+                        self.show_page(page_num)
                 
                 self.update_nav_buttons()
 
