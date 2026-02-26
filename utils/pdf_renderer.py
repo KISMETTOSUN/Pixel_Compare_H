@@ -25,10 +25,11 @@ class PDFRenderer:
             print(f"Error loading PDF: {e}")
             return False
 
-    def get_new_page_image(self, page_num, display_width=None, display_height=None, highlight_rect=None, zoom_percent=None):
+    def get_new_page_image(self, page_num, display_width=None, display_height=None, highlight_rect=None, highlight_rects=None, zoom_percent=None):
         """
         Returns a CTkImage of the specified page, scaled to fit display area.
-        highlight_rect: optional [x0, y0, x1, y1] from PDF coordinates to draw a red box.
+        highlight_rect: optional [x0, y0, x1, y1] from PDF coordinates to draw a green box.
+        highlight_rects: optional list of [x0, y0, x1, y1] to draw multiple green boxes.
         zoom_percent: optional int (e.g. 25, 50, 75, 100). If provided, uses fixed zoom instead of auto-fit.
         """
         if not self.doc or page_num < 0 or page_num >= len(self.doc):
@@ -52,16 +53,22 @@ class PDFRenderer:
         
         img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
         
-        # Draw highlight if provided
+        # Collect all rects to highlight
+        all_rects = []
         if highlight_rect:
+            all_rects.append(highlight_rect)
+        if highlight_rects:
+            all_rects.extend(highlight_rects)
+        
+        # Draw green highlights
+        if all_rects:
             from PIL import ImageDraw
             draw = ImageDraw.Draw(img, "RGBA")
-            # Scale coordinates by zoom
-            x0, y0, x1, y1 = highlight_rect
-            scaled_rect = [x0 * zoom, y0 * zoom, x1 * zoom, y1 * zoom]
-            
-            # Draw semi-transparent red rectangle
-            draw.rectangle(scaled_rect, fill=(255, 0, 0, 100), outline="red", width=2)
+            for rect in all_rects:
+                x0, y0, x1, y1 = rect
+                scaled_rect = [x0 * zoom, y0 * zoom, x1 * zoom, y1 * zoom]
+                # Draw semi-transparent green rectangle
+                draw.rectangle(scaled_rect, fill=(0, 200, 0, 100), outline="#00cc00", width=3)
         
         return ctk.CTkImage(light_image=img, dark_image=img, size=(pix.width, pix.height))
 

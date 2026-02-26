@@ -3,6 +3,7 @@ from tkinter import ttk
 from ui.home_frame import HomeFrame
 from ui.main_window import ProspektusFrame
 from ui.pixel_compare import PixelCompareFrame
+from ui.kutu_kontrol_frame import KutuKontrolFrame
 
 
 class App(ctk.CTk):
@@ -29,7 +30,7 @@ class App(ctk.CTk):
         self._clear_frame()
         self.geometry("900x600")
         self.title("Üçgen - Doküman Kontrol Sistemi")
-        frame = HomeFrame(self.container, on_prospektus=self.show_prospektus, on_pixel=self.show_pixel)
+        frame = HomeFrame(self.container, on_prospektus=self.show_prospektus, on_pixel=self.show_pixel, on_kutu=self.show_kutu)
         frame.pack(fill="both", expand=True)
         self.current_frame = frame
     
@@ -51,6 +52,14 @@ class App(ctk.CTk):
         style.theme_use('default')
         
         frame = PixelCompareFrame(self.container, on_back=self.show_home)
+        frame.pack(fill="both", expand=True)
+        self.current_frame = frame
+    
+    def show_kutu(self):
+        self._clear_frame()
+        self.geometry("1300x850")
+        self.title("Üçgen - Kutu Tasarım Kontrolü")
+        frame = KutuKontrolFrame(self.container, on_back=self.show_home)
         frame.pack(fill="both", expand=True)
         self.current_frame = frame
     

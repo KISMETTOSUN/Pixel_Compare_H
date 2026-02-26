@@ -1,6 +1,8 @@
 === Analysis Start ===
-[PHASE 0b MATCH] Row 5 'Ürün Miktarı': Found '20 veya 30 tablet içeren blister ambalajlarda.' on page 9
-[PHASE 0c MATCH] Row 6 'Saklama Kosulu': Found '25°C’nin altındaki oda sıcaklığında saklanmalıdır.' on page 9
-[PHASE 1 MATCH] Row 2 'Ürün Adı': Found 'PAROL 500 mg tablet' on page 0
-[PHASE 1 MATCH] Row 3 'Farmasotik Şekil': Found 'Tablet' on page 0
-[PHASE 1 MATCH] Row 4 'Etkin Madde': Found '500 mg parasetamol' on page 0
+[PHASE 0 MATCH] Row 4 'Etkin Madde': Found '300 mg parasetamol, 2 mg klorfeniramin maleat, 10 mg kodein fosfat içerir.' on page 0
+[PHASE 0b MATCH] Row 5 'Ürün Miktarı': Found 'A-FERİN kapsül 20-30 kapsül içeren blister ambalajlarda kullanıma sunulmuştur.' on page 0
+[PHASE 0c MATCH] Row 6 'Saklama Kosulu': Found '25°C’nin altındaki oda sıcaklığında saklayınız.' on page 7
+[PHASE 1 MATCH] Row 3 'Farmasotik Şekil': Found 'Kapsül' on page 0
+
+[PHASE 2] Row 2 'Ürün Adı': Strategies=[{'type': 'page_hint', 'page': 0}, {'type': 'under_heading', 'heading': 'KISA ÜRÜN BİLGİSİ'}, {'type': 'under_heading', 'heading': 'KULLANMA TALİMATI'}, {'type': 'under_heading', 'heading': 'KISA ÜRÜN BİLGİSİ  baş'}]
+[PHASE 2 MATCH] Row 2 'Ürün Adı': Found 'A-FERİN® 300 mg/2 mg/ 10 mg kapsül Ağızdan alınır. Etkin madde: 300 mg parasetamol, 2 mg klorfeniramin maleat, 10 mg kodein fosfat içerir.' on page 0
