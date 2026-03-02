@@ -6,13 +6,14 @@ import os
 class HomeFrame(ctk.CTkFrame):
     """Ana sayfa - 3 modül seçimi: Prospektüs Kontrolü, Tasarım Karşılaştır, Kutu Tasarım Kontrolü"""
     
-    def __init__(self, parent, on_prospektus=None, on_pixel=None, on_kutu=None):
+    def __init__(self, parent, on_prospektus=None, on_pixel=None, on_kutu=None, on_deneme=None):
         super().__init__(parent)
         self.configure(fg_color="#1a1a1a")
         
         self.on_prospektus = on_prospektus
         self.on_pixel = on_pixel
         self.on_kutu = on_kutu
+        self.on_deneme = on_deneme
         
         # Center container
         self.grid_rowconfigure(0, weight=1)
@@ -76,9 +77,18 @@ class HomeFrame(ctk.CTkFrame):
             row=2
         )
         
+        # Card 4: Deneme
+        self._create_card(
+            cards_frame,
+            icon="🧪",
+            title="Deneme",
+            command=self._on_deneme_click,
+            row=3
+        )
+        
         # Footer
-        ctk.CTkLabel(
-            self, text="v1.3",
+        self.version_label = ctk.CTkLabel(
+            self, text="v1.5",
             font=ctk.CTkFont(size=11),
             text_color="#555555"
         ).grid(row=2, column=0, sticky="s", pady=(0, 15))
@@ -144,3 +154,7 @@ class HomeFrame(ctk.CTkFrame):
     def _on_kutu_click(self):
         if self.on_kutu:
             self.on_kutu()
+            
+    def _on_deneme_click(self):
+        if self.on_deneme:
+            self.on_deneme()

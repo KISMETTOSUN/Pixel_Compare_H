@@ -4,6 +4,7 @@ from ui.home_frame import HomeFrame
 from ui.main_window import ProspektusFrame
 from ui.pixel_compare import PixelCompareFrame
 from ui.kutu_kontrol_frame import KutuKontrolFrame
+from ui.deneme_frame import DenemeFrame
 
 
 class App(ctk.CTk):
@@ -28,9 +29,9 @@ class App(ctk.CTk):
     
     def show_home(self):
         self._clear_frame()
-        self.geometry("900x600")
+        self.geometry("900x750")
         self.title("Üçgen - Doküman Kontrol Sistemi")
-        frame = HomeFrame(self.container, on_prospektus=self.show_prospektus, on_pixel=self.show_pixel, on_kutu=self.show_kutu)
+        frame = HomeFrame(self.container, on_prospektus=self.show_prospektus, on_pixel=self.show_pixel, on_kutu=self.show_kutu, on_deneme=self.show_deneme)
         frame.pack(fill="both", expand=True)
         self.current_frame = frame
     
@@ -60,6 +61,14 @@ class App(ctk.CTk):
         self.geometry("1300x850")
         self.title("Üçgen - Kutu Tasarım Kontrolü")
         frame = KutuKontrolFrame(self.container, on_back=self.show_home)
+        frame.pack(fill="both", expand=True)
+        self.current_frame = frame
+        
+    def show_deneme(self):
+        self._clear_frame()
+        self.geometry("1200x800")
+        self.title("Üçgen - Deneme")
+        frame = DenemeFrame(self.container, on_back=self.show_home)
         frame.pack(fill="both", expand=True)
         self.current_frame = frame
     

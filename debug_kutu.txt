@@ -85,7 +85,7 @@ Arama: 'KKKIKIKIIKII (7843)'
   lenient:   'kkkikikiikii 7843'
   Sonuç: BULUNDU → KKKIKIKIIKII (7843)
 
-Arama: '1505891'
-  normalize: '1505891'
-  lenient:   '1505891'
-  Sonuç: BULUNDU → 1505891
+Arama: ' G04BE03.'
+  normalize: 'g04be03.'
+  lenient:   'g04be03'
+  Sonuç: BULUNDU → G04BE03. Farmakoloji
